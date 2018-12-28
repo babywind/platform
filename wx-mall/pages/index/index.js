@@ -17,7 +17,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: 'NideShop',
-      desc: '仿网易严选微信小程序商城',
+      desc: '微信小程序商城',
       path: '/pages/index/index'
     }
   },onPullDownRefresh(){
@@ -27,7 +27,7 @@ Page({
  },
   getIndexData: function () {
     let that = this;
-    var data = new Object();
+    let data = new Object();
     util.request(api.IndexUrlNewGoods).then(function (res) {
       if (res.errno === 0) {
         data.newGoods= res.data.newGoodsList

@@ -115,14 +115,14 @@ public class ApiGoodsController extends ApiBaseAction {
             @ApiImplicitParam(name = "referrer", value = "商品referrer", paramType = "path", required = false)})
     @PostMapping(value = "detail")
     public Object detail(Integer id, Long referrer) {
-        Map<String, Object> resultObj = new HashMap();
+        Map<String, Object> resultObj = new HashMap<>();
         //
         Long userId = getUserId();
         GoodsVo info = goodsService.queryObject(id);
         Map param = new HashMap();
         param.put("goods_id", id);
         //
-        Map specificationParam = new HashMap();
+        Map<String, Object> specificationParam = new HashMap<>();
         specificationParam.put("fields", "gs.*, s.name");
         specificationParam.put("goods_id", id);
         specificationParam.put("specification", true);
@@ -130,7 +130,7 @@ public class ApiGoodsController extends ApiBaseAction {
         specificationParam.put("order", "asc");
         List<GoodsSpecificationVo> goodsSpecificationEntityList = goodsSpecificationService.queryList(specificationParam);
 
-        List<Map> specificationList = new ArrayList();
+        List<Map> specificationList = new ArrayList<>();
         //按规格名称分组
         for (int i = 0; i < goodsSpecificationEntityList.size(); i++) {
             GoodsSpecificationVo specItem = goodsSpecificationEntityList.get(i);

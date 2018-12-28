@@ -109,7 +109,7 @@ Page({
     let that = this;
 
     if (!this.data.isEditCart) {
-      var productIds = this.data.cartGoods.map(function (v) {
+      let productIds = this.data.cartGoods.map(function (v) {
         return v.product_id;
       });
       util.request(api.CartChecked, { productIds: productIds.join(','), isChecked: that.isCheckedAll() ? 0 : 1 }).then(function (res) {
