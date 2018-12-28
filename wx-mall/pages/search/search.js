@@ -31,7 +31,7 @@ Page({
       searchStatus: false
     });
   },
-  onLoad: function () {
+  onShow: function () {
 
     this.getSearchKeyword();
   },

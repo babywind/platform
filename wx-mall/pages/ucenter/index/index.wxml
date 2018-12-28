@@ -25,44 +25,44 @@
         <text class="txt">我的收藏</text>
       </navigator>
     </view>
-    <view class="item">
+    <!-- <view class="item">
       <navigator url="/pages/ucenter/footprint/footprint" class="a">
         <text class="icon security"></text>
         <text class="txt">我的足迹</text>
       </navigator>
-    </view>
+    </view> -->
     <view class="item">
       <navigator url="/pages/ucenter/address/address" class="a">
         <text class="icon address"></text>
         <text class="txt">地址管理</text>
       </navigator>
     </view>
-    <button class='service' open-type="contact">
+    <!-- <button class='service' open-type="contact">
       <view class="item no-border">
         <navigator url="url" class="a">
           <text class="icon kefu"></text>
           <text class="txt">联系客服</text>
         </navigator>
       </view>
-    </button>
-    <view class="item item-bottom">
+    </button> -->
+    <!-- <view class="item item-bottom">
       <navigator url="/pages/ucenter/help/help" class="a">
         <text class="icon help"></text>
         <text class="txt">帮助中心</text>
       </navigator>
-    </view>
-    <view class="item item-bottom">
+    </view> -->
+    <view class="item">
       <navigator url="/pages/ucenter/feedback/feedback" class="a">
         <text class="icon feedback"></text>
         <text class="txt">意见反馈</text>
       </navigator>
     </view>
-    <view class="item item-bottom" v-if="hasMobile != ''">
+    <!-- <view class="item" v-if="hasMobile != ''">
       <navigator url="/pages/auth/mobile/mobile" class="a">
         <text class="icon phone"></text>
         <text class="txt">绑定手机</text>
       </navigator>
-    </view>
+    </view> -->
   </view>
   <!--<view class="logout" bindtap="exitLogin">退出登录</view>-->
 </view>
