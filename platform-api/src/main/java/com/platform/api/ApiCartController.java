@@ -49,9 +49,9 @@ public class ApiCartController extends ApiBaseAction {
     @ApiOperation(value = "获取购物车中的数据")
     @PostMapping("getCart")
     public Object getCart(@LoginUser UserVo loginUser) {
-        Map<String, Object> resultObj = new HashMap();
+        Map<String, Object> resultObj = new HashMap<>();
         //查询列表数据
-        Map param = new HashMap();
+        Map<String, Object> param = new HashMap<>();
         param.put("user_id", loginUser.getUserId());
         List<CartVo> cartList = cartService.queryList(param);
         //获取购物车统计信息
@@ -68,11 +68,11 @@ public class ApiCartController extends ApiBaseAction {
             }
         }
         // 获取优惠信息提示
-        Map couponParam = new HashMap();
+        Map<String, Object> couponParam = new HashMap<>();
         couponParam.put("enabled", true);
         Integer[] send_types = new Integer[]{0, 7};
         couponParam.put("send_types", send_types);
-        List<CouponInfoVo> couponInfoList = new ArrayList();
+        List<CouponInfoVo> couponInfoList = new ArrayList<>();
         List<CouponVo> couponVos = apiCouponService.queryList(couponParam);
         if (null != couponVos && couponVos.size() > 0) {
             CouponInfoVo fullCutVo = new CouponInfoVo();
@@ -132,7 +132,7 @@ public class ApiCartController extends ApiBaseAction {
         String[] idsArray = null;
         if (org.apache.commons.lang.StringUtils.isNotEmpty(ids)) {
             String[] tempArray = ids.split("_");
-            if (null != tempArray && tempArray.length > 0) {
+            if (tempArray.length > 0) {
                 idsArray = tempArray;
             }
         }
@@ -334,10 +334,10 @@ public class ApiCartController extends ApiBaseAction {
      */
     @ApiOperation(value = "是否选择商品")
     @PostMapping("checked")
-    public Object checked(@LoginUser UserVo loginUser) {
-        JSONObject jsonParam = getJsonRequest();
-        String productIds = jsonParam.getString("productIds");
-        Integer isChecked = jsonParam.getInteger("isChecked");
+    public Object checked(@LoginUser UserVo loginUser, String productIds, Integer isChecked) {
+//        JSONObject jsonParam = getJsonRequest();
+//        String productIds = jsonParam.getString("productIds");
+//        Integer isChecked = jsonParam.getInteger("isChecked");
         if (StringUtils.isNullOrEmpty(productIds)) {
             return this.toResponsFail("删除出错");
         }

@@ -7,7 +7,9 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -99,6 +101,9 @@ public class OrderVo implements Serializable {
     private BigDecimal full_cut_price; //订单满减
     private String full_region;//区县
     private String order_type; // 订单状态
+
+    // 订单商品
+    private List<OrderGoodsVo> goodsList;
 
     public String getFull_region() {
     //    return full_region;
@@ -404,13 +409,13 @@ public class OrderVo implements Serializable {
 
     public String getOrder_status_text() {
         if (null != order_status && StringUtils.isEmpty(order_status_text)) {
-            order_status_text = "未付款";
+//            order_status_text = "未付款";
             switch (order_status) {
                 case 0:
                     order_status_text = "未付款";
                     break;
                 case 201:
-                    order_status_text = "等待发货";
+                    order_status_text = "待发货";
                     break;
                 case 300:
                     order_status_text = "待收货";
@@ -516,5 +521,13 @@ public class OrderVo implements Serializable {
 
     public void setShipping_no(String shipping_no) {
         this.shipping_no = shipping_no;
+    }
+
+    public List<OrderGoodsVo> getGoodsList() {
+        return this.goodsList;
+    }
+
+    public void setGoodsList(List<OrderGoodsVo> goodsList) {
+        this.goodsList = goodsList;
     }
 }

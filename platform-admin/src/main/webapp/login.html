@@ -77,7 +77,7 @@
 <script src="statics/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <script src="statics/libs/fastclick.min.js"></script>
 <script type="text/javascript">
-    var vm = new Vue({
+    let vm = new Vue({
         el: '#loginBox',
         data: {
             username: 'admin',
@@ -107,7 +107,7 @@
                     iview.Message.warning("验证码为空");
                     return false;
                 }
-                var data = "username=" + vm.username + "&password=" + vm.password + "&captcha=" + vm.captcha;
+                let data = "username=" + vm.username + "&password=" + vm.password + "&captcha=" + vm.captcha;
                 $.ajax({
                     type: "POST",
                     url: "sys/login",

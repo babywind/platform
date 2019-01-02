@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  overflow-x: scroll;
 }
 
 .m-menu .item {
@@ -26,8 +27,8 @@
 
 .m-menu image {
   display: block;
-  width: 58rpx;
-  height: 58rpx;
+  width: 70rpx;
+  height: 70rpx;
   margin: 0 auto;
   margin-bottom: 12rpx;
 }

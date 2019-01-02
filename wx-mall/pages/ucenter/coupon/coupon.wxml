@@ -6,7 +6,7 @@
     </view>
     <view class="add-btn disabled">兑换</view>
   </view> -->
-  <view class="help">使用说明</view>
+  <!-- <view class="help">使用说明</view> -->
   <show-empty-data wx:if="{{couponList.length<=0}}" showType="NO_COUPON"></show-empty-data>
   <view wx:else class="coupon-list">
     <block wx:for="{{couponList}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.id}}">

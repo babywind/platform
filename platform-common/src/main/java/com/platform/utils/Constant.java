@@ -126,11 +126,16 @@ public class Constant {
         /**
          * 腾讯云
          */
-        QCLOUD(3);
+        QCLOUD(3),
+
+        /**
+         * LOCAL
+         */
+        LOCAL(4);
 
         private int value;
 
-        private CloudService(int value) {
+        CloudService(int value) {
             this.value = value;
         }
 
@@ -153,7 +158,7 @@ public class Constant {
         NO("1");
         private String value;
 
-        private YESNO(String value) {
+        YESNO(String value) {
             this.value = value;
         }
 

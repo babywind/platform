@@ -10,10 +10,11 @@
         <Row :gutter="16">
             <div class="search-group">
                 <i-col span="4">
-                    <i-input v-model="q.orderSn" @on-enter="query" placeholder="订单号"/>
+                    <i-input v-model="q.orderSn" @on-enter="query" placeholder="订单号" clearable/>
                 </i-col>
                 <i-col span="4">
-                    <i-select v-model="q.orderStatus">
+                    <i-select v-model="q.orderStatus" placeholder="订单状态">
+                        <i-option value=""></i-option>
                         <i-option value="0">待付款</i-option>
                         <i-option value="101">订单已取消</i-option>
                         <i-option value="102">订单已删除</i-option>
@@ -25,7 +26,8 @@
                     </i-select>
                 </i-col>
                 <i-col span="4">
-                    <i-select v-model="q.orderType">
+                    <i-select v-model="q.orderType" placeholder="订单类型">
+                        <i-option value=""></i-option>
                         <i-option value="1">普通订单</i-option>
                         <i-option value="2">团购订单</i-option>
                         <i-option value="3">砍价订单</i-option>

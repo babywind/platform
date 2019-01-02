@@ -1,7 +1,5 @@
-var util = require('../../utils/util.js');
-var api = require('../../config/api.js');
-
-var app = getApp();
+let util = require('../../utils/util.js');
+let api = require('../../config/api.js');
 
 Page({
   data: {
@@ -63,11 +61,11 @@ Page({
     });
   },
   checkedItem: function (event) {
-    let itemIndex = event.target.dataset.itemIndex;
+    let itemIndex = event.target.dataset.idx;
     let that = this;
 
     if (!this.data.isEditCart) {
-      util.request(api.CartChecked, { productIds: that.data.cartGoods[itemIndex].product_id, isChecked: that.data.cartGoods[itemIndex].checked ? 0 : 1 }).then(function (res) {
+      util.request(api.CartChecked, { productIds: that.data.cartGoods[itemIndex].product_id, isChecked: that.data.cartGoods[itemIndex].checked ? 0 : 1 }, 'POST').then(function (res) {
         if (res.errno === 0) {
           that.setData({
             cartGoods: res.data.cartList,
@@ -141,7 +139,7 @@ Page({
 
   },
   editCart: function () {
-    var that = this;
+    let that = this;
     if (this.data.isEditCart) {
       this.getCartList();
       this.setData({
@@ -216,7 +214,7 @@ Page({
     //获取已选择的商品
     let that = this;
 
-    var checkedGoods = this.data.cartGoods.filter(function (element, index, array) {
+    let checkedGoods = this.data.cartGoods.filter(function (element, index, array) {
       if (element.checked == true) {
         return true;
       } else {

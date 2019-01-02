@@ -28,7 +28,7 @@ $(function () {
             }
         },
         onComplete: function (file, r) {
-            if (r.code == 0) {
+            if (r.code === 0) {
                 alert(r.url);
                 vm.reload();
             } else {
@@ -39,7 +39,7 @@ $(function () {
 
 });
 
-var vm = new Vue({
+let vm = new Vue({
     el: '#rrapp',
     data: {
         showList: true,
@@ -101,7 +101,7 @@ var vm = new Vue({
             vm.title = "云存储配置";
         },
         saveOrUpdate: function () {
-            var url = "../sys/oss/saveConfig";
+            let url = "../sys/oss/saveConfig";
             Ajax.request({
                 url: url,
                 params: JSON.stringify(vm.config),
@@ -115,7 +115,7 @@ var vm = new Vue({
             });
         },
         del: function () {
-            var ossIds = getSelectedRows("#jqGrid");
+            let ossIds = getSelectedRows("#jqGrid");
             if (ossIds == null) {
                 return;
             }
@@ -135,14 +135,14 @@ var vm = new Vue({
             });
         },
         lookImg: function () {
-            var grid = $("#jqGrid");
-            var id = grid.jqGrid('getGridParam', 'selrow');//根据点击行获得点击行的id（id为jsonReader: {id: "id" },）
+            let grid = $("#jqGrid");
+            let id = grid.jqGrid('getGridParam', 'selrow');//根据点击行获得点击行的id（id为jsonReader: {id: "id" },）
             if (!id) {
                 alert("请选择一条记录");
                 return;
             }
-            var ids = grid.jqGrid('getGridParam', 'selarrrow');
-            var data = [];
+            let ids = grid.jqGrid('getGridParam', 'selarrrow');
+            let data = [];
             for (var i = 0; i < ids.length; i++) {
                 id = ids[i];
                 var rowData = grid.jqGrid("getRowData", id);
@@ -154,7 +154,7 @@ var vm = new Vue({
         },
         reload: function () {
             vm.showList = true;
-            var page = $("#jqGrid").jqGrid('getGridParam', 'page');
+            let page = $("#jqGrid").jqGrid('getGridParam', 'page');
             $("#jqGrid").jqGrid('setGridParam', {
                 page: page
             }).trigger("reloadGrid");

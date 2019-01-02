@@ -35,18 +35,18 @@ page{
 
 .search-header .icon{
     position: absolute;
-    top: 14rpx;
-    left: 20rpx;
-    width: 31rpx;
-    height: 31rpx;
+    top: 5rpx;
+    left: 10rpx;
+    width: 50rpx;
+    height: 50rpx;
 }
 
 .search-header .del{
     position: absolute;
-    top: 3rpx;
+    top: 10rpx;
     right: 10rpx;
-    width: 53rpx;
-    height: 53rpx;
+    width: 40rpx;
+    height: 40rpx;
     z-index: 10;
 }
 

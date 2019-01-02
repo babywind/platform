@@ -225,10 +225,9 @@ public class ApiIndexController extends ApiBaseAction {
     @IgnoreAuth
     @PostMapping(value = "category")
     public Object category() {
-        Map<String, Object> resultObj = new HashMap<String, Object>();
-        //
-        Map<String, Object> param = new HashMap<String, Object>();
-        param = new HashMap<String, Object>();
+        Map<String, Object> resultObj = new HashMap<>();
+
+        Map<String, Object> param = new HashMap<>();
         param.put("parent_id", 0);
         param.put("notName", "推荐");//<>
         List<CategoryVo> categoryList = categoryService.queryList(param);
@@ -246,7 +245,7 @@ public class ApiIndexController extends ApiBaseAction {
                 }
             }
             //
-            param = new HashMap<String, Object>();
+            param = new HashMap<>();
             param.put("categoryIds", childCategoryIds);
             param.put("fields", "id as id, name as name, list_pic_url as list_pic_url, retail_price as retail_price");
             param.put("is_delete", "0");
@@ -259,7 +258,8 @@ public class ApiIndexController extends ApiBaseAction {
             newCategoryList.add(newCategory);
         }
         resultObj.put("categoryList", newCategoryList);
-        //
+
+        resultObj.put("categorys", categoryList);
 
         return toResponsSuccess(resultObj);
     }
@@ -268,13 +268,12 @@ public class ApiIndexController extends ApiBaseAction {
     @IgnoreAuth
     @PostMapping(value = "banner")
     public Object banner() {
-        Map<String, Object> resultObj = new HashMap<String, Object>();
-        //
-        Map<String, Object> param = new HashMap<String, Object>();
+        Map<String, Object> resultObj = new HashMap<>();
+
+        Map<String, Object> param = new HashMap<>();
         param.put("ad_position_id", 1);
         List<AdVo> banner = adService.queryList(param);
         resultObj.put("banner", banner);
-        //
 
         return toResponsSuccess(resultObj);
     }
@@ -283,16 +282,14 @@ public class ApiIndexController extends ApiBaseAction {
     @IgnoreAuth
     @PostMapping(value = "channel")
     public Object channel() {
-        Map<String, Object> resultObj = new HashMap<String, Object>();
-        //
-        Map<String, Object> param = new HashMap<String, Object>();
-        param = new HashMap<String, Object>();
+        Map<String, Object> resultObj = new HashMap<>();
+        Map<String, Object> param = new HashMap<>();
         param.put("sidx", "sort_order ");
         param.put("order", "asc ");
         List<ChannelVo> channel = channelService.queryList(param);
         resultObj.put("channel", channel);
-        //
 
         return toResponsSuccess(resultObj);
     }
+
 }

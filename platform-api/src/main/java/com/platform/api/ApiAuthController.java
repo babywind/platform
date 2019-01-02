@@ -114,6 +114,7 @@ public class ApiAuthController extends ApiBaseAction {
             userVo.setAvatar(userInfo.getAvatarUrl());
             userVo.setGender(userInfo.getGender()); // //性别 0：未知、1：男、2：女
             userVo.setNickname(userInfo.getNickName());
+            userVo.setUser_level_id(1);     //普通用户
             userService.save(userVo);
         } else {
             userVo.setLast_login_ip(this.getClientIp());

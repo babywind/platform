@@ -67,7 +67,7 @@ page{
   padding-top: 14rpx;
   padding-bottom: 11rpx;
   color: #7f7f7f;
-  font-size: 24rpx;
+  font-size: 28rpx;
   padding-left: 30rpx;
   padding-right: 30rpx;
   line-height: 33rpx;

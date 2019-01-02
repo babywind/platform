@@ -37,9 +37,9 @@ CREATE TABLE `nideshop_ad` (
 -- ----------------------------
 -- Records of nideshop_ad
 -- ----------------------------
-INSERT INTO `nideshop_ad` VALUES ('1', '1', '1', '合作 谁是你的菜', '', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/65091eebc48899298171c2eb6696fe27.jpg', '合作 谁是你的菜', '2017-09-07 21:48:34', '0');
-INSERT INTO `nideshop_ad` VALUES ('2', '1', '1', '活动 美食节', '/pages/activity/activity?referrer=1&sourceKey=abcdefg', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/bff2e49136fcef1fd829f5036e07f116.jpg', '活动 美食节', '2017-09-07 21:48:34', '1');
-INSERT INTO `nideshop_ad` VALUES ('3', '1', '1', '新用户注册', '/pages/auth/newuser/newuser', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/xinhuiyuan.jpg', '新用户注册', '2017-09-07 21:48:34', '1');
+-- INSERT INTO `nideshop_ad` VALUES ('1', '1', '1', '合作 谁是你的菜', '', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/65091eebc48899298171c2eb6696fe27.jpg', '合作 谁是你的菜', '2017-09-07 21:48:34', '0');
+-- INSERT INTO `nideshop_ad` VALUES ('2', '1', '1', '活动 美食节', '/pages/activity/activity?referrer=1&sourceKey=abcdefg', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/bff2e49136fcef1fd829f5036e07f116.jpg', '活动 美食节', '2017-09-07 21:48:34', '1');
+-- INSERT INTO `nideshop_ad` VALUES ('3', '1', '1', '新用户注册', '/pages/auth/newuser/newuser', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/xinhuiyuan.jpg', '新用户注册', '2017-09-07 21:48:34', '1');
 
 -- ----------------------------
 -- Table structure for `nideshop_address`
@@ -63,7 +63,7 @@ CREATE TABLE `nideshop_address` (
 -- ----------------------------
 -- Records of nideshop_address
 -- ----------------------------
-INSERT INTO `nideshop_address` VALUES ('1', '23', '李鹏军', '15209831990', '230000', '340104', '安徽省', '合肥市', '蜀山区', '汽修小区29栋');
+-- INSERT INTO `nideshop_address` VALUES ('1', '23', '李鹏军', '15209831990', '230000', '340104', '安徽省', '合肥市', '蜀山区', '汽修小区29栋');
 
 -- ----------------------------
 -- Table structure for `nideshop_ad_position`
@@ -101,6 +101,7 @@ CREATE TABLE `nideshop_attribute` (
 -- ----------------------------
 -- Records of nideshop_attribute
 -- ----------------------------
+/*
 INSERT INTO `nideshop_attribute` VALUES ('1', '1008009', '材质', '1', '', '0');
 INSERT INTO `nideshop_attribute` VALUES ('2', '1008009', '适用床尺寸', '1', '', '0');
 INSERT INTO `nideshop_attribute` VALUES ('3', '1008009', '件数', '1', '', '0');
@@ -137,7 +138,7 @@ INSERT INTO `nideshop_attribute` VALUES ('33', '1008008', '外用面料', '1', '
 INSERT INTO `nideshop_attribute` VALUES ('34', '1008008', '商品重量', '1', '', '0');
 INSERT INTO `nideshop_attribute` VALUES ('35', '1008002', '坐垫外层面料', '1', '', '0');
 INSERT INTO `nideshop_attribute` VALUES ('36', '1008002', '坐垫内芯材料', '1', '', '0');
-
+*/
 -- ----------------------------
 -- Table structure for `nideshop_attribute_category`
 -- ----------------------------
@@ -152,6 +153,7 @@ CREATE TABLE `nideshop_attribute_category` (
 -- ----------------------------
 -- Records of nideshop_attribute_category
 -- ----------------------------
+/*
 INSERT INTO `nideshop_attribute_category` VALUES ('1008002', '布艺软装', '1');
 INSERT INTO `nideshop_attribute_category` VALUES ('1008008', '被枕', '1');
 INSERT INTO `nideshop_attribute_category` VALUES ('1008009', '床品件套', '1');
@@ -160,6 +162,7 @@ INSERT INTO `nideshop_attribute_category` VALUES ('1011004', '家饰', '1');
 INSERT INTO `nideshop_attribute_category` VALUES ('1015000', '家具', '1');
 INSERT INTO `nideshop_attribute_category` VALUES ('1017000', '宠物', '1');
 INSERT INTO `nideshop_attribute_category` VALUES ('1036000', '夏凉', '1');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_brand`
@@ -185,6 +188,7 @@ CREATE TABLE `nideshop_brand` (
 -- ----------------------------
 -- Records of nideshop_brand
 -- ----------------------------
+/*
 INSERT INTO `nideshop_brand` VALUES ('1001000', 'MUJI制造商', 'http://yanxuan.nosdn.127.net/1541445967645114dd75f6b0edc4762d.png', '严选精选了MUJI制造商和生产原料，\n用几乎零利润的价格，剔除品牌溢价，\n让用户享受原品牌的品质生活。', 'http://yanxuan.nosdn.127.net/4ea3f1e60dd77c45c218e503d721a1ed.jpg', '2', '1', '12.90', 'http://yanxuan.nosdn.127.net/1541445967645114dd75f6b0edc4762d.png', '1', 'http://yanxuan.nosdn.127.net/4ea3f1e60dd77c45c218e503d721a1ed.jpg', '2');
 INSERT INTO `nideshop_brand` VALUES ('1001002', '内野制造商', 'http://yanxuan.nosdn.127.net/8ca3ce091504f8aa1fba3fdbb7a6e351.png', '严选从世界各地挑选毛巾，最终选择了为日本内野代工的工厂，追求毛巾的柔软度与功能性。品质比肩商场几百元的毛巾。', 'http://yanxuan.nosdn.127.net/e50654982984206b54e9226e5ab7f90c.jpg', '10', '1', '29.00', 'http://yanxuan.nosdn.127.net/8ca3ce091504f8aa1fba3fdbb7a6e351.png', '0', '', '10');
 INSERT INTO `nideshop_brand` VALUES ('1001003', 'Adidas制造商', 'http://yanxuan.nosdn.127.net/335334d0deaff6dc3376334822ab3a2f.png', '严选找到为Adidas等品牌制造商，\n选取优质原材料，与厂方一起设计，\n为你提供好的理想的运动装备。', 'http://yanxuan.nosdn.127.net/6f954ea8cee30e161dda048ffbfd950f.png', '30', '1', '49.00', 'http://yanxuan.nosdn.127.net/335334d0deaff6dc3376334822ab3a2f.png', '0', '', '10');
@@ -234,6 +238,7 @@ INSERT INTO `nideshop_brand` VALUES ('1039001', '京瓷制造商', 'http://yanxu
 INSERT INTO `nideshop_brand` VALUES ('1040000', 'Tescom制造商', 'http://yanxuan.nosdn.127.net/c17cd65971189fdc28f5bd6b78f657a7.png', '严选为打造时尚健康的个护电器，\n选择Tescom品牌制造商，全球最大个护电器工厂之一，\n拥有20年经验，出口180多个国家，品质有保障。', 'http://yanxuan.nosdn.127.net/21ff3c560b263cf45dd2b8c92091768b.jpg', '15', '1', '59.00', 'http://yanxuan.nosdn.127.net/c17cd65971189fdc28f5bd6b78f657a7.png', '0', '', '10');
 INSERT INTO `nideshop_brand` VALUES ('1041000', 'BCBG制造商', 'http://yanxuan.nosdn.127.net/b9072023afd3621714fd5c49f140fca8.png', '严选从产品源头开始，每道工序质量把关，\n选择美国知名品牌BCBG的制造商合作，\n严谨匠心，致力于优质柔滑的睡衣穿搭产品。', 'http://yanxuan.nosdn.127.net/3f2a66543f4c6e2abd5de2d280ff7960.png', '36', '1', '99.00', 'http://yanxuan.nosdn.127.net/b9072023afd3621714fd5c49f140fca8.png', '0', '', '10');
 INSERT INTO `nideshop_brand` VALUES ('1046000', 'Police制造商', 'http://yanxuan.nosdn.127.net/66e2cb956a9dd1efc7732bea278e901e.png', '严选团队选定Police品牌制造商合作，\n有11年眼镜生产资质，兼顾品质与品味，\n为你带来专业时尚的墨镜。', 'http://yanxuan.nosdn.127.net/d48930cbb91f0e3adafe5341ce270a4e.png', '6', '1', '109.00', 'http://yanxuan.nosdn.127.net/66e2cb956a9dd1efc7732bea278e901e.png', '0', '', '10');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_cart`
@@ -261,7 +266,7 @@ CREATE TABLE `nideshop_cart` (
 -- ----------------------------
 -- Records of nideshop_cart
 -- ----------------------------
-INSERT INTO `nideshop_cart` VALUES ('126', '15', '1', '1152008', '1152008', '232', '魔兽世界 部落 护腕 一只', '0.00', '29.00', '2', null, '', '1', 'http://yanxuan.nosdn.127.net/203cb83d93606865e3ddde57b69b9e9a.png');
+-- INSERT INTO `nideshop_cart` VALUES ('126', '15', '1', '1152008', '1152008', '232', '魔兽世界 部落 护腕 一只', '0.00', '29.00', '2', null, '', '1', 'http://yanxuan.nosdn.127.net/203cb83d93606865e3ddde57b69b9e9a.png');
 
 -- ----------------------------
 -- Table structure for `nideshop_category`
@@ -290,6 +295,7 @@ CREATE TABLE `nideshop_category` (
 -- ----------------------------
 -- Records of nideshop_category
 -- ----------------------------
+/*
 INSERT INTO `nideshop_category` VALUES ('1005000', '居家', '', '回家，放松身心', '0', '2', '1', '1', 'http://yanxuan.nosdn.127.net/92357337378cce650797444bc107b0f7.jpg', 'http://yanxuan.nosdn.127.net/a45c2c262a476fea0b9fc684fed91ef5.png', '//nos.netease.com/yanxuan/f0d0e1a542e2095861b42bf789d948ce.jpg', 'http://yanxuan.nosdn.127.net/e8bf0cf08cf7eda21606ab191762e35c.png', 'L1', '0', '回家，放松身心');
 INSERT INTO `nideshop_category` VALUES ('1005001', '餐厨', '', '厨房', '0', '3', '2', '1', 'http://yanxuan.nosdn.127.net/f4ff8b3d5b0767d4e578575c1fd6b921.jpg', 'http://yanxuan.nosdn.127.net/ad8b00d084cb7d0958998edb5fee9c0a.png', '//nos.netease.com/yanxuan/88855173a0cfcfd889ee6394a3259c4f.jpg', 'http://yanxuan.nosdn.127.net/3708dbcb35ad5abf9e001500f73db615.png', 'L1', '0', '爱，囿于厨房');
 INSERT INTO `nideshop_category` VALUES ('1005002', '饮食', '', '好吃，高颜值美食', '0', '9', '8', '1', 'http://yanxuan.nosdn.127.net/dd6cc8a7e996936768db5634f12447ed.jpg', 'http://yanxuan.nosdn.127.net/c9280327a3fd2374c000f6bf52dff6eb.png', '//nos.netease.com/yanxuan/9a29ef4f41c305a12e1459f12abd290f.jpg', 'http://yanxuan.nosdn.127.net/fb670ff3511182833e5b035275e4ac09.png', 'L1', '0', '好吃，高颜值美食');
@@ -383,6 +389,7 @@ INSERT INTO `nideshop_category` VALUES ('1036001', '眼镜', '', '实用加时�
 INSERT INTO `nideshop_category` VALUES ('1036002', '汽车用品', '', '给你的爱车添装备', '1012000', '10', '10', '1', 'http://yanxuan.nosdn.127.net/382cda1ef9cca77d99bcef05070d7db0.png', '', '', 'http://yanxuan.nosdn.127.net/552e943e585a999169fdbc57b59524d6.png', 'L2', '0', '给你的爱车添装备');
 INSERT INTO `nideshop_category` VALUES ('1036003', '调味', '', '烹饪必备，美食调味', '1005002', '9', '9', '1', 'http://yanxuan.nosdn.127.net/2ae44a3944f2bc737416e1cff3d4bcef.png', '', '', 'http://yanxuan.nosdn.127.net/13d58949a8c72ec914b5ef63ac726a43.png', 'L2', '0', '烹饪必备，美食调味');
 INSERT INTO `nideshop_category` VALUES ('1036004', '大话西游', '', '大话西游正版周边', '1019000', '9', '8', '1', 'http://yanxuan.nosdn.127.net/b60618db213322bdc2c5b1208655bd7e.png', '', '', 'http://yanxuan.nosdn.127.net/470a017f508e9a18f3068be7b315e14b.png', 'L2', '0', '大话西游正版周边');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_channel`
@@ -400,11 +407,13 @@ CREATE TABLE `nideshop_channel` (
 -- ----------------------------
 -- Records of nideshop_channel
 -- ----------------------------
+/*
 INSERT INTO `nideshop_channel` VALUES (1, '居家', '/pages/category/category?id=1005000', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/1508205806587c.png', 1);
 INSERT INTO `nideshop_channel` VALUES (2, '餐厨', '/pages/category/category?id=1005001', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/1509505811a78d.png', 2);
 INSERT INTO `nideshop_channel` VALUES (3, '配件', '/pages/category/category?id=1008000', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/1512165188bbba.png', 3);
 INSERT INTO `nideshop_channel` VALUES (4, '服装', '/pages/category/category?id=1005002', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/151537891573ed.png', 4);
 INSERT INTO `nideshop_channel` VALUES (5, '志趣', '/pages/category/category?id=1019000', 'https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180727/151514826f7581.png', 5);
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_collect`
@@ -483,12 +492,14 @@ CREATE TABLE `nideshop_coupon` (
 -- ----------------------------
 -- Records of nideshop_coupon
 -- ----------------------------
+/*
 INSERT INTO `nideshop_coupon` VALUES ('1', '满100减10元', '10.00', '0', '100.00', '0.00', '2017-08-28 11:51:49', '2020-09-29 11:51:53', '2017-05-01 16:50:40', '2019-11-27 16:50:48', '500.00', null);
 INSERT INTO `nideshop_coupon` VALUES ('2', '用户红包', '10.00', '1', '50.00', '0.00', '2017-08-28 11:50:51', '2020-12-02 11:50:56', '2017-06-14 11:50:56', '2020-12-02 11:50:56', '500.00', null);
 INSERT INTO `nideshop_coupon` VALUES ('4', '新用户注册5元', '5.00', '4', '10.00', '0.00', '2017-08-28 11:50:51', '2020-12-02 11:50:56', '2017-06-14 11:50:56', '2020-12-02 11:50:56', '360.00', null);
 INSERT INTO `nideshop_coupon` VALUES ('7', '满88元包邮', '0.00', '7', '88.00', '0.00', '2017-08-28 11:50:51', '2020-12-02 11:50:56', '2017-05-01 16:50:40', '2019-11-27 16:50:48', '0.00', null);
 INSERT INTO `nideshop_coupon` VALUES ('8', '满1000减20元', '20.00', '0', '1000.00', '0.00', '2017-08-28 11:51:49', '2020-09-29 11:51:53', '2017-05-01 16:50:40', '2019-11-27 16:50:48', '500.00', null);
 INSERT INTO `nideshop_coupon` VALUES ('9', '满20元减1元', '1.00', '6', '20.00', '0.00', '2017-08-28 11:51:49', '2020-09-29 11:51:53', '2017-05-01 16:50:40', '2019-11-27 16:50:48', '20.00', '10');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_coupon_goods`
@@ -521,8 +532,10 @@ CREATE TABLE `nideshop_feedback` (
 -- ----------------------------
 -- Records of nideshop_feedback
 -- ----------------------------
+/*
 INSERT INTO `nideshop_feedback` VALUES ('1', '19', 'A0_不甘平凡的你', '11111111111', '2', '12', '1', '2017-10-05 23:16:21');
 INSERT INTO `nideshop_feedback` VALUES ('2', '19', 'A0_不甘平凡的你', '15209831990', '2', '反馈的内容', '1', '2017-10-05 23:28:56');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_footprint`
@@ -592,6 +605,7 @@ CREATE TABLE `nideshop_goods` (
 -- ----------------------------
 -- Records of nideshop_goods
 -- ----------------------------
+/*
 INSERT INTO `nideshop_goods` VALUES ('1006002', '1008009', '1006002', '轻奢纯棉刺绣水洗四件套', '0', '100', '', '设计师原款，精致绣花', '<p><img src=\"http://yanxuan.nosdn.127.net/2597f9e2e41093f50761837eb4c2e6be.jpg\" _src=\"http://yanxuan.nosdn.127.net/2597f9e2e41093f50761837eb4c2e6be.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/4377adc892bf9d16f9d0fd78f88a6986.jpg\" _src=\"http://yanxuan.nosdn.127.net/4377adc892bf9d16f9d0fd78f88a6986.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/986bd3a7517a356265049443cbb747d9.jpg\" _src=\"http://yanxuan.nosdn.127.net/986bd3a7517a356265049443cbb747d9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/5cdf3958b3a8d9982b879e3fea1fd616.jpg\" _src=\"http://yanxuan.nosdn.127.net/5cdf3958b3a8d9982b879e3fea1fd616.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/47e5be34ef476258f44f307982c705d4.jpg\" _src=\"http://yanxuan.nosdn.127.net/47e5be34ef476258f44f307982c705d4.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/a2220e4cbb5ebc49e9cecb64176983d9.jpg\" _src=\"http://yanxuan.nosdn.127.net/a2220e4cbb5ebc49e9cecb64176983d9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/dee62e466465b370c349e37fccd3b596.jpg\" _src=\"http://yanxuan.nosdn.127.net/dee62e466465b370c349e37fccd3b596.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/c021b91f965ac022182eb03b2780e5de.jpg\" _src=\"http://yanxuan.nosdn.127.net/c021b91f965ac022182eb03b2780e5de.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/b9f7afd9441928d7f670fd7879ba869d.jpg\" _src=\"http://yanxuan.nosdn.127.net/b9f7afd9441928d7f670fd7879ba869d.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/8a73b69a2fefbd154a2a6ad45102b565.jpg\" _src=\"http://yanxuan.nosdn.127.net/8a73b69a2fefbd154a2a6ad45102b565.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/5836d918faa9b11eb8d9f97f9787cda9.jpg\" _src=\"http://yanxuan.nosdn.127.net/5836d918faa9b11eb8d9f97f9787cda9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/8216a8addae2f02a5a570ef45d5ecffc.jpg\" _src=\"http://yanxuan.nosdn.127.net/8216a8addae2f02a5a570ef45d5ecffc.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/da382973dcb0e524a36519baab880204.jpg\" _src=\"http://yanxuan.nosdn.127.net/da382973dcb0e524a36519baab880204.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/f1c6e84d49f74e228bc57934ec7b7500.jpg\" _src=\"http://yanxuan.nosdn.127.net/f1c6e84d49f74e228bc57934ec7b7500.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/2f1d0a20e54d3e2e59a44ffe44ebe405.jpg\" _src=\"http://yanxuan.nosdn.127.net/2f1d0a20e54d3e2e59a44ffe44ebe405.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/a39f2c7580ce5cadc62e8b39d58aca71.jpg\" _src=\"http://yanxuan.nosdn.127.net/a39f2c7580ce5cadc62e8b39d58aca71.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/c71dc416f04615b634d2b6cd0c4215ee.jpg\" _src=\"http://yanxuan.nosdn.127.net/c71dc416f04615b634d2b6cd0c4215ee.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/06ac26ed7d870c5c6f0ce3e07c629471.jpg\" _src=\"http://yanxuan.nosdn.127.net/06ac26ed7d870c5c6f0ce3e07c629471.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/99b180d02726e0213e54dddf4b9b32fd.jpg\" _src=\"http://yanxuan.nosdn.127.net/99b180d02726e0213e54dddf4b9b32fd.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/97de8d2687052976e51fff40d04af2ce.jpg\" _src=\"http://yanxuan.nosdn.127.net/97de8d2687052976e51fff40d04af2ce.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/3f527003599be237095995c98039ef87.jpg\" _src=\"http://yanxuan.nosdn.127.net/3f527003599be237095995c98039ef87.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/ec30289dc1b2beb4b84a08c02a97ef6e.jpg\" _src=\"http://yanxuan.nosdn.127.net/ec30289dc1b2beb4b84a08c02a97ef6e.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/685da1eaddcd26e8e2a1ff4d5d83f29f.jpg\" _src=\"http://yanxuan.nosdn.127.net/685da1eaddcd26e8e2a1ff4d5d83f29f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/2610f487a733a88973d101dcd1766ee1.jpg\" _src=\"http://yanxuan.nosdn.127.net/2610f487a733a88973d101dcd1766ee1.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/eab3633e648ab2e8412c6801feb6231e.jpg\" _src=\"http://yanxuan.nosdn.127.net/eab3633e648ab2e8412c6801feb6231e.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/7b6c4f220592ea7d5af0072a816fe946.jpg\" _src=\"http://yanxuan.nosdn.127.net/7b6c4f220592ea7d5af0072a816fe946.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/310a777685204ece08592a6e2716c6c9.jpg\" _src=\"http://yanxuan.nosdn.127.net/310a777685204ece08592a6e2716c6c9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/198239985c74597717e639089ffae25f.jpg\" _src=\"http://yanxuan.nosdn.127.net/198239985c74597717e639089ffae25f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/dec6b498c899351fe94d99a6dde0ee79.jpg\" _src=\"http://yanxuan.nosdn.127.net/dec6b498c899351fe94d99a6dde0ee79.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/516a17ca73846bc871902b298ce38a97.jpg\" _src=\"http://yanxuan.nosdn.127.net/516a17ca73846bc871902b298ce38a97.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/d8231b81b5ba0e1c244074598c19f003.jpg\" _src=\"http://yanxuan.nosdn.127.net/d8231b81b5ba0e1c244074598c19f003.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/92c704dcf169e9a177a3c762a6a54a46.jpg\" _src=\"http://yanxuan.nosdn.127.net/92c704dcf169e9a177a3c762a6a54a46.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/5b9294ad5f78d890453d4a225feed518.jpg\" _src=\"http://yanxuan.nosdn.127.net/5b9294ad5f78d890453d4a225feed518.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/9bb1b8fdfaa7f895bdd7d5c65c42a59b.jpg\" _src=\"http://yanxuan.nosdn.127.net/9bb1b8fdfaa7f895bdd7d5c65c42a59b.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/f342e6d6b75dc1f80972feb415fd4e75.jpg\" _src=\"http://yanxuan.nosdn.127.net/f342e6d6b75dc1f80972feb415fd4e75.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/6c9597cf206066861b3244f634c98e32.jpg\" _src=\"http://yanxuan.nosdn.127.net/6c9597cf206066861b3244f634c98e32.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/970d4dad7d958293fd41ec1f444684f1.jpg\" _src=\"http://yanxuan.nosdn.127.net/970d4dad7d958293fd41ec1f444684f1.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/6f93819b03de07abef8b2d94f1d5c84b.jpg\" _src=\"http://yanxuan.nosdn.127.net/6f93819b03de07abef8b2d94f1d5c84b.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/58c8c56aac61da4ee9fcf34930b76e4e.jpg\" _src=\"http://yanxuan.nosdn.127.net/58c8c56aac61da4ee9fcf34930b76e4e.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/fb6435ec714189d6ad5053bf12d41db7.jpg\" _src=\"http://yanxuan.nosdn.127.net/fb6435ec714189d6ad5053bf12d41db7.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/19cc85ae097247d5d868df993de64e7b.jpg\" _src=\"http://yanxuan.nosdn.127.net/19cc85ae097247d5d868df993de64e7b.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/0ab8e27757cabd39fccdb5fd8ef7b013.jpg\" _src=\"http://yanxuan.nosdn.127.net/0ab8e27757cabd39fccdb5fd8ef7b013.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/03e6f02f8f77b71a82a05dd1a9705057.jpg\" _src=\"http://yanxuan.nosdn.127.net/03e6f02f8f77b71a82a05dd1a9705057.jpg\" style=\"\"/></p><p><br/></p>', '1', '2017-08-30 11:40:11', '23', '0', '0', '0.00', '0.00', '0', '件', 'http://yanxuan.nosdn.127.net/599ee624350ecb9e70c32375c0cd4807.jpg', 'http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png', '899.00', '168', '1006003', '0.00', '限时购', '', '0.00', '0', '0', '0', '988.90', null, null, null, null);
 INSERT INTO `nideshop_goods` VALUES ('1006007', '1008008', '1006007', '秋冬保暖加厚澳洲羊毛被', '0', '100', '', '臻品级澳洲进口羊毛', '<p><img src=\"http://yanxuan.nosdn.127.net/c78ec6e16d8477525c0a59e3c9d847b8.jpg\" _src=\"http://yanxuan.nosdn.127.net/c78ec6e16d8477525c0a59e3c9d847b8.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/294185760b75f364f6ed42784877e59c.jpg\" _src=\"http://yanxuan.nosdn.127.net/294185760b75f364f6ed42784877e59c.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/2468d1851e29930cc3802f125da5d6e8.jpg\" _src=\"http://yanxuan.nosdn.127.net/2468d1851e29930cc3802f125da5d6e8.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/0794791277945c1577776724778124f8.jpg\" _src=\"http://yanxuan.nosdn.127.net/0794791277945c1577776724778124f8.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/6973ca1e6f264620d5d25e581a0d623d.jpg\" _src=\"http://yanxuan.nosdn.127.net/6973ca1e6f264620d5d25e581a0d623d.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/26f01273c833c2ae75177a5c8d9310ef.jpg\" _src=\"http://yanxuan.nosdn.127.net/26f01273c833c2ae75177a5c8d9310ef.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/bf0207da5160588acf58d0f02ea9d360.jpg\" _src=\"http://yanxuan.nosdn.127.net/bf0207da5160588acf58d0f02ea9d360.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/dbd5d5171a309344d05663952930441f.jpg\" _src=\"http://yanxuan.nosdn.127.net/dbd5d5171a309344d05663952930441f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/e7a65ac0824fc1584c2f1943ed1eaed0.jpg\" _src=\"http://yanxuan.nosdn.127.net/e7a65ac0824fc1584c2f1943ed1eaed0.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/88871ed9eccf7fbdfccf7912bb8f9d21.jpg\" _src=\"http://yanxuan.nosdn.127.net/88871ed9eccf7fbdfccf7912bb8f9d21.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/7aa0e4c0abeb157e231b17e91cfa8f02.jpg\" _src=\"http://yanxuan.nosdn.127.net/7aa0e4c0abeb157e231b17e91cfa8f02.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/a38f897200e305e7b23d62431b9c4d18.jpg\" _src=\"http://yanxuan.nosdn.127.net/a38f897200e305e7b23d62431b9c4d18.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/bb147c0e96cdac2d77ab4eef1785e99d.jpg\" _src=\"http://yanxuan.nosdn.127.net/bb147c0e96cdac2d77ab4eef1785e99d.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/c6a270f7aed68cfe74e66d720c776fca.jpg\" _src=\"http://yanxuan.nosdn.127.net/c6a270f7aed68cfe74e66d720c776fca.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/c2c0b548be17f620db8afbe039a99452.jpg\" _src=\"http://yanxuan.nosdn.127.net/c2c0b548be17f620db8afbe039a99452.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/155fe0023e17bac4af486a6c1c098537.jpg\" _src=\"http://yanxuan.nosdn.127.net/155fe0023e17bac4af486a6c1c098537.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/8f1f120ca7e362595fd986ea6de8814f.jpg\" _src=\"http://yanxuan.nosdn.127.net/8f1f120ca7e362595fd986ea6de8814f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/6971f0333e0eeef7d9951edad068d4ec.jpg\" _src=\"http://yanxuan.nosdn.127.net/6971f0333e0eeef7d9951edad068d4ec.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/c307630edf971e408938f1007169fa53.jpg\" _src=\"http://yanxuan.nosdn.127.net/c307630edf971e408938f1007169fa53.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/4ea2ba74fb518a298ef825c43ed634f4.jpg\" _src=\"http://yanxuan.nosdn.127.net/4ea2ba74fb518a298ef825c43ed634f4.jpg\" style=\"\"/></p><p><br/></p>', '1', '2017-08-30 11:40:11', '17', '0', '0', '0.00', '0.00', '0', '件', 'http://yanxuan.nosdn.127.net/33c1b1b20972990e0ae81f260b00f036.jpg', 'http://yanxuan.nosdn.127.net/66425d1ed50b3968fed27c822fdd32e0.png', '459.00', '1730', '1006022', '0.00', '限时购', '', '0.00', '0', '0', '0', '504.90', null, null, null, null);
 INSERT INTO `nideshop_goods` VALUES ('1006010', '1008008', '1006010', '秋冬保暖加厚细羊毛被', '0', '100', '', '细腻绵羊毛，保暖性增加一倍', '<p><img src=\"http://yanxuan.nosdn.127.net/01c77e998005297e0fad16b25433409f.jpg\" _src=\"http://yanxuan.nosdn.127.net/01c77e998005297e0fad16b25433409f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/36bffed3bd139e0135f35e1c30dfab01.jpg\" _src=\"http://yanxuan.nosdn.127.net/36bffed3bd139e0135f35e1c30dfab01.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/400b9395fb6947977a27da56baf07fcb.jpg\" _src=\"http://yanxuan.nosdn.127.net/400b9395fb6947977a27da56baf07fcb.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/7d6aef8e60f6bf2a438774ae114a9206.jpg\" _src=\"http://yanxuan.nosdn.127.net/7d6aef8e60f6bf2a438774ae114a9206.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/13521752a26971ad793d5e3e7061305b.jpg\" _src=\"http://yanxuan.nosdn.127.net/13521752a26971ad793d5e3e7061305b.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/8e4beb6669d9a83e19540727c01ced37.jpg\" _src=\"http://yanxuan.nosdn.127.net/8e4beb6669d9a83e19540727c01ced37.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/9c2e31cb55507bcb4653181f64a069a4.jpg\" _src=\"http://yanxuan.nosdn.127.net/9c2e31cb55507bcb4653181f64a069a4.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/2a65159336d1e2991ef93ed2aab15b7f.jpg\" _src=\"http://yanxuan.nosdn.127.net/2a65159336d1e2991ef93ed2aab15b7f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/4bade2a9a72c78749f2a0126a43f5943.jpg\" _src=\"http://yanxuan.nosdn.127.net/4bade2a9a72c78749f2a0126a43f5943.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/15cf85dc65d2d857bfd1e45516775944.jpg\" _src=\"http://yanxuan.nosdn.127.net/15cf85dc65d2d857bfd1e45516775944.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/dffc49e67aa11308b8e408d7539ddf84.jpg\" _src=\"http://yanxuan.nosdn.127.net/dffc49e67aa11308b8e408d7539ddf84.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/0826118b3dbd1a123419d1f7f46784de.jpg\" _src=\"http://yanxuan.nosdn.127.net/0826118b3dbd1a123419d1f7f46784de.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/2cc7573ddb418a0f9fc0483367fce877.jpg\" _src=\"http://yanxuan.nosdn.127.net/2cc7573ddb418a0f9fc0483367fce877.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/62b67fcc05f65b26be987e2576ac1b97.jpg\" _src=\"http://yanxuan.nosdn.127.net/62b67fcc05f65b26be987e2576ac1b97.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/61a604a7f4ec39a7383265d4fb4ba1fe.jpg\" _src=\"http://yanxuan.nosdn.127.net/61a604a7f4ec39a7383265d4fb4ba1fe.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/5b04ba442e1d859cce4a945b5fee0ec2.jpg\" _src=\"http://yanxuan.nosdn.127.net/5b04ba442e1d859cce4a945b5fee0ec2.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/0aae1850fdc689eb42103b43709a3de9.jpg\" _src=\"http://yanxuan.nosdn.127.net/0aae1850fdc689eb42103b43709a3de9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/9a82fdc70b5da5c802dca76410c80dac.jpg\" _src=\"http://yanxuan.nosdn.127.net/9a82fdc70b5da5c802dca76410c80dac.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/41fff402bc16cd45614bdfa7b612849f.jpg\" _src=\"http://yanxuan.nosdn.127.net/41fff402bc16cd45614bdfa7b612849f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/d357f7ec1ced66c8865ed1029cbcc562.jpg\" _src=\"http://yanxuan.nosdn.127.net/d357f7ec1ced66c8865ed1029cbcc562.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/ad18d0bdad9a571bbf03ebe013a422d9.jpg\" _src=\"http://yanxuan.nosdn.127.net/ad18d0bdad9a571bbf03ebe013a422d9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/5e0e6c2c77f1627b79037b76ba37adf9.jpg\" _src=\"http://yanxuan.nosdn.127.net/5e0e6c2c77f1627b79037b76ba37adf9.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/b71de5aaafd05a730cfe421f9e16053d.jpg\" _src=\"http://yanxuan.nosdn.127.net/b71de5aaafd05a730cfe421f9e16053d.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/aeca9234db5622edfe465c3f7732d203.jpg\" _src=\"http://yanxuan.nosdn.127.net/aeca9234db5622edfe465c3f7732d203.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/678124d2002655e05588a9484f8e5c14.jpg\" _src=\"http://yanxuan.nosdn.127.net/678124d2002655e05588a9484f8e5c14.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/3909a0aa66fbdc59c99d0666aef34286.jpg\" _src=\"http://yanxuan.nosdn.127.net/3909a0aa66fbdc59c99d0666aef34286.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/4ec01a83f6f6cd2d282ec0be98daeb3a.jpg\" _src=\"http://yanxuan.nosdn.127.net/4ec01a83f6f6cd2d282ec0be98daeb3a.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/d8716853b4b08223e886ee8d882e2d58.jpg\" _src=\"http://yanxuan.nosdn.127.net/d8716853b4b08223e886ee8d882e2d58.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/b8188de7819424845707f3f79a1f80d6.jpg\" _src=\"http://yanxuan.nosdn.127.net/b8188de7819424845707f3f79a1f80d6.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/30298def5edcdd62d0c4a20cfdfef66c.jpg\" _src=\"http://yanxuan.nosdn.127.net/30298def5edcdd62d0c4a20cfdfef66c.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/3437687b19a26469212a1e2c485c557d.jpg\" _src=\"http://yanxuan.nosdn.127.net/3437687b19a26469212a1e2c485c557d.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/2450afdd3b9f3cc7fc27bbde33ae0e86.jpg\" _src=\"http://yanxuan.nosdn.127.net/2450afdd3b9f3cc7fc27bbde33ae0e86.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/434d004c435b62a9505c5ffdf6d362d5.jpg\" _src=\"http://yanxuan.nosdn.127.net/434d004c435b62a9505c5ffdf6d362d5.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/41b6db4ce14bc2d3ff6526d43f52fb46.jpg\" _src=\"http://yanxuan.nosdn.127.net/41b6db4ce14bc2d3ff6526d43f52fb46.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/cec4d2d62eccc86b409465e1344f1d24.jpg\" _src=\"http://yanxuan.nosdn.127.net/cec4d2d62eccc86b409465e1344f1d24.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/09b9868d054ffcdbba3166882fbc8f38.jpg\" _src=\"http://yanxuan.nosdn.127.net/09b9868d054ffcdbba3166882fbc8f38.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/9d8027527ac4af59cc2172a7c3dce64e.jpg\" _src=\"http://yanxuan.nosdn.127.net/9d8027527ac4af59cc2172a7c3dce64e.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/59deea242718d6610f445776833f9afa.jpg\" _src=\"http://yanxuan.nosdn.127.net/59deea242718d6610f445776833f9afa.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/13f4b4c5dc11e4f5d2767254d2a5c777.jpg\" _src=\"http://yanxuan.nosdn.127.net/13f4b4c5dc11e4f5d2767254d2a5c777.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/f0d22f9c380873ddca23e6f187d6b6aa.jpg\" _src=\"http://yanxuan.nosdn.127.net/f0d22f9c380873ddca23e6f187d6b6aa.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/1821334ad83bfaa64ac4d212be9dd953.jpg\" _src=\"http://yanxuan.nosdn.127.net/1821334ad83bfaa64ac4d212be9dd953.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/72e6119d0329faa952d036173cf2f7fc.jpg\" _src=\"http://yanxuan.nosdn.127.net/72e6119d0329faa952d036173cf2f7fc.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/f69081555848f7d3af16cefb9f661c64.jpg\" _src=\"http://yanxuan.nosdn.127.net/f69081555848f7d3af16cefb9f661c64.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/cbb30819e21854491e0a5c8cf933b59a.jpg\" _src=\"http://yanxuan.nosdn.127.net/cbb30819e21854491e0a5c8cf933b59a.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/16f564772fc2f1d0030629b42be12211.jpg\" _src=\"http://yanxuan.nosdn.127.net/16f564772fc2f1d0030629b42be12211.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/a74dc5e969fc0896537be54155e11cd8.jpg\" _src=\"http://yanxuan.nosdn.127.net/a74dc5e969fc0896537be54155e11cd8.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/7c9702f8ffa6e3ebfcb5e1c14161a493.jpg\" _src=\"http://yanxuan.nosdn.127.net/7c9702f8ffa6e3ebfcb5e1c14161a493.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/f4e3b23eacbc419baa748525bc71ac3f.jpg\" _src=\"http://yanxuan.nosdn.127.net/f4e3b23eacbc419baa748525bc71ac3f.jpg\" style=\"\"/></p><p><img src=\"http://yanxuan.nosdn.127.net/fb9520c1bc8e63e480bd61cfbcb6d18c.jpg\" _src=\"http://yanxuan.nosdn.127.net/fb9520c1bc8e63e480bd61cfbcb6d18c.jpg\" style=\"\"/></p><p><br/></p>', '1', '2017-08-30 11:40:11', '16', '0', '0', '0.00', '0.00', '0', '件', 'http://yanxuan.nosdn.127.net/0e5e4cc4f12a72f37a0019707d333f49.jpg', 'http://yanxuan.nosdn.127.net/8fe022126a2789d970f82853be13a5e6.png', '659.00', '3919', '1006041', '0.00', '限时购', '', '0.00', '0', '0', '0', '724.90', null, null, null, null);
@@ -831,7 +845,7 @@ INSERT INTO `nideshop_goods` VALUES ('1155015', '1008015', '1155015', '绿豆糕
 INSERT INTO `nideshop_goods` VALUES ('1156006', '1012001', '1156006', '20寸 全铝镁合金登机箱', '0', '100', '', '100%铝镁合金，超薄坚固', '', '1', '2017-08-30 11:40:11', '3', '0', '0', '0.00', '0.00', '0', '件', 'http://yanxuan.nosdn.127.net/d1ab558679fb96508c0d3991c4e8b5d9.jpg', 'http://yanxuan.nosdn.127.net/ea5b0a572b35089446fba491db7fbbc3.png', '699.00', '741', '1165011', '0.00', '限时购', '', '0.00', '0', '0', '0', '768.90', null, null, null, null);
 INSERT INTO `nideshop_goods` VALUES ('1166008', '1005007', '1166008', 'Carat钻石 不粘厨具组合', '0', '100', '', '钻石涂层，不粘锅锅具组', '', '1', '2017-08-30 11:40:11', '5', '0', '0', '0.00', '0.00', '1', '只', 'http://yanxuan.nosdn.127.net/056baf67bb8cc9a4f2544ac5954ab67c.jpg', 'http://yanxuan.nosdn.127.net/615a16e899e01efb780c488df4233f48.png', '459.00', '889', '1178050', '0.00', '限时购', '', '0.00', '0', '0', '0', '504.90', null, '1', null, null);
 INSERT INTO `nideshop_goods` VALUES ('1181000', '1008008', '1181000', '母亲节礼物-舒适安睡组合', '1001020', '100', '', '安心舒适是最好的礼物', '<p><img src=\"http://yanxuan.nosdn.127.net/3ddfe10db43f7df33ba82ae7570ada80.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/7682b7930b4776ce032f509c24a74a1e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e0bb6a50e27681925c5bb26bceb67ef4.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ba63b244c74ce06fda82bb6a29cc0f71.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/3c7808c3a4769bad5af4974782f08654.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/71798aaac23a91fdab4d77e1b980a4df.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c88cbb2dd2310b732571f49050fe4059.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5dfdcd654e0f3076f7c05dd9c19c15ea.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/bd55d6ef7af69422d8d76af10ee70156.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/bae571b22954c521b35e446d652edc1d.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e709c4d9e46d602a4d2125e47110f6ae.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/83e41915035c418db177af8b1eca385c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/f42c561e6935fe3e0e0873653da78670.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8317726fbae80b98764dc4c6233a913e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ba904b7c948b8015db2171435325270f.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/4969c73d0d8f29bffb69529c96ca4889.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/d80b9b8c5c31031d1cd5357e48748632.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/3fe79bdae40662a7b1feed3179d3dd1f.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/79eef059963b12479f65e782d1dca128.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e5a8f64f4297ccc01b41df98b0f252c8.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a940b9e9525c4861407e4c3b07b02977.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/224b8b81cbe12e4ad060a50f1e26601a.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/85e151647452fad718effb7b1adc18e2.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/d47444ff3bb9dc0aa4ab1f9b84d83768.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/136262743f0c849cc0c55c8e7963dd7e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/331a97cbaff5b25a3b08ed7cdfe29df9.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/89b450aa0a8afe1db566dcad926f1fe8.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c1cf94f13b7280a97e751cebe573fa78.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/1822c23def83b77e7607c24237eeec74.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/2af234312b3914d6d0bc316f92134614.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c4f8ab2b3813275d954a8bedcf902d26.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/42f18842ff0c92ed849c4401ae47bb61.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a8ea64a35799e50ab31ecb65345fe8f4.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/18759fa90cd153bdd744280807c3c155.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/431f00d068a8e747959deb3b7bdd495a.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5bd3b44f1f4c627bfa39f7809e866ec6.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/7fc36778fe2f6129b9c26e8298c5be7e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c568432e3d5ab6786cd9dcae8008891b.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ec82ff5aecafa48807117da68cce2ce9.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/b8eccbed570da595e6f8a71ed4abc42c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/9cae1fed6ecefcd61435fe6e2c700fd6.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e306a418f82777399f5e88b93cca22db.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a66d717084e23864ce079f936557709f.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/6ae06c6505cdbf87a0210fe3b8727d5f.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/58ac2086725b0ba2fe800195f274a0b4.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5e2e9d9eb099647fbe041ec6645ac034.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8154357c0fab82bd4e67cda9aaa128c0.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/4325763b738ec3183ecf0d82b2b28e32.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/06d8ea9d10035a00f26c5c52cc601ca7.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/499f30b9e69b5dddf3db36f105756111.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ed7e1733d54e711a560edb3a76f1a60c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/b6474347eebdb917d2e827fd526dd01c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/b2c0691f9204c5ebc94b4ff678919ca7.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/b4811e702a6884a9251d7cc9e3b06b6f.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/d518783c054695acf329e81d597fdec3.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/835ce09e785cca635c176008975053a1.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/769af780de81a302c0a3b03ed8e6c528.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/da34f99daf9141f0fe56a766461b8485.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/d7c9cd8722a2f9a78e158ce02ec5d4f2.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/09ea18953884b15227819e326103462b.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5ef728213983842edf1aec27b2c1f5b6.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/95409f2a884dcfeaabfe5e61fcf9ec37.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/6807836dc2a940ba56ea10c7a63b14c9.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e1d976d06853e7a0e6c9cc4ab484ac8a.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/47f5673dec5005092f6d897d6335966c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/1b0109abd0e6a0d13fa2423a96c1167e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/916111a8f94cc0bd39375b3dcac14e35.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c1360df3d6b703c5df9b2f47a2a3d12e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/1d5a31eb93ef873a165993bd99f29df1.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/997a48948b89dd7261ed5a59ba884f45.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/eb96d9689735c9f4019ebf76da43b2b2.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a92cf2172e6cafe080e4511205568d79.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c9e94570428f197292bb3f43609963f5.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/37145f06cce747311692ad7f276645db.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c9a698b71ed911364fc6f243006c241c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e89db969711efaa441c43d6b90498a0c.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/3803bb1a18229562f18943512b1d3524.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/235cbb5be905ac2b87e7e8f7c8d90144.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/3e38435b3fdbae4ee80b83995592901e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8ceb7cd3231585da60a74dd2c1aa9015.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e151e225c2e30aab7ccf086094381577.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/363c19306953daf10968f4aa86617997.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/4237a392cf2e69b110ad4ecf35e44059.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/da8ab35ada2dfe55006db01efa96e51a.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/aa1d4fd00b7879db3f1051dc6d16aa87.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/302a8f2d997ff22bedcd837672cdafc2.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a39ff68c00522aef0472402958a334d2.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/86ccd0eb677c8b552398869d11a8917e.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a6d0ede352da947060d912d903646a5d.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e6a118bf95bdb61891409d25f193e9c4.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c214066e9bf65d60bcebd691b5b1cbc1.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c301559ba3ee280bcbf2fc4269bfa9ca.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/573748f5c12ecb4515ba00a7b6e981dc.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/27bcc8bf512a7e6f994a9683b3deea82.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e22a4507fd1e4b5ef859035e857ae419.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/27b07b4ca709c33ad71b368f87781307.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ef31eb48bcb133728bffda7e1239b592.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5f49aaaca59c0733ec92f100d01bc0af.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/818889261deb75044e1018ec53485d85.jpg\" style=\"\" class=\"fr-fin\"></p><p><img src=\"http://yanxuan.nosdn.127.net/200369f023243e2faeb18a2a0a352ef1.jpg\" style=\"\" class=\"fr-fin\"></p><p><br></p>', '1', '2017-08-30 11:40:11', '1', '0', '1036000', '0.00', '0.00', '1', '', 'https://mp123.oss-cn-shenzhen.aliyuncs.com/upload/20170908/092741972ad4b4.jpg', 'http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png', '2598.00', '1533', '1194000', '0.00', '限时购', '', '0.00', '0', '0', '0', '2857.80', null, null, null, null);
-
+*/
 -- ----------------------------
 -- Table structure for `nideshop_goods_attribute`
 -- ----------------------------
@@ -849,6 +863,7 @@ CREATE TABLE `nideshop_goods_attribute` (
 -- ----------------------------
 -- Records of nideshop_goods_attribute
 -- ----------------------------
+/*
 INSERT INTO `nideshop_goods_attribute` VALUES ('1', '1006002', '1', '100%棉');
 INSERT INTO `nideshop_goods_attribute` VALUES ('2', '1006002', '2', '1.5米+1.8米通用');
 INSERT INTO `nideshop_goods_attribute` VALUES ('3', '1006002', '3', '4件');
@@ -1720,6 +1735,7 @@ INSERT INTO `nideshop_goods_attribute` VALUES ('868', '1155000', '5', 'GB/T 2284
 INSERT INTO `nideshop_goods_attribute` VALUES ('869', '1155000', '6', '中国山东');
 INSERT INTO `nideshop_goods_attribute` VALUES ('870', '1181000', '16', '组合一：AB面独立弹簧床垫 进口乳胶150*200cm*1+可水洗抗菌防螨丝羽绒枕*2。\n组合二：AB面独立弹簧床垫 进口乳胶180*200cm*1+可水洗抗菌防螨丝羽绒枕*2');
 INSERT INTO `nideshop_goods_attribute` VALUES ('871', '1181000', '102', '活动时间：5月8日0点-5月14日24点。\n请在以上时间段内购买，其余时间均不可享受组合装优惠。');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_goods_gallery`
@@ -1738,6 +1754,7 @@ CREATE TABLE `nideshop_goods_gallery` (
 -- ----------------------------
 -- Records of nideshop_goods_gallery
 -- ----------------------------
+/*
 INSERT INTO `nideshop_goods_gallery` VALUES ('1', '1006002', 0x687474703A2F2F79616E7875616E2E6E6F73646E2E3132372E6E65742F34656230396530386163396465353433643232393164323761366265306235342E6A7067, '', '5');
 INSERT INTO `nideshop_goods_gallery` VALUES ('2', '1006002', 0x687474703A2F2F79616E7875616E2E6E6F73646E2E3132372E6E65742F30633965623831633735393464626534323830326666316562626563653531612E6A7067, '', '5');
 INSERT INTO `nideshop_goods_gallery` VALUES ('3', '1006002', 0x687474703A2F2F79616E7875616E2E6E6F73646E2E3132372E6E65742F38636663376236626664323836383761623333393964613038653562613631622E6A7067, '', '5');
@@ -2418,6 +2435,7 @@ INSERT INTO `nideshop_goods_gallery` VALUES ('677', '1181000', 0x687474703A2F2F7
 INSERT INTO `nideshop_goods_gallery` VALUES ('678', '1181000', 0x687474703A2F2F79616E7875616E2E6E6F73646E2E3132372E6E65742F34336532383364663231363838313033376237306438623334663838343664332E6A7067, '', '5');
 INSERT INTO `nideshop_goods_gallery` VALUES ('679', '1181000', 0x687474703A2F2F79616E7875616E2E6E6F73646E2E3132372E6E65742F31326534316437653564616261663931353061386262343563343163663432322E6A7067, '', '5');
 INSERT INTO `nideshop_goods_gallery` VALUES ('680', '1181000', 0x687474703A2F2F79616E7875616E2E6E6F73646E2E3132372E6E65742F35633164323865383663636238393938306536303534613439353731636465632E6A7067, '', '5');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_goods_issue`
@@ -2456,11 +2474,13 @@ CREATE TABLE `nideshop_goods_specification` (
 -- ----------------------------
 -- Records of nideshop_goods_specification
 -- ----------------------------
+/*
 INSERT INTO `nideshop_goods_specification` VALUES ('1', '1181000', '1', '1.5m床垫*1+枕头*2', '');
 INSERT INTO `nideshop_goods_specification` VALUES ('2', '1181000', '1', '1.8m床垫*1+枕头*2', '');
 INSERT INTO `nideshop_goods_specification` VALUES ('3', '1181000', '2', '浅杏粉', 'http://yanxuan.nosdn.127.net/10022c73fa7aa75c2c0d736e96cc56d5.png?quality=90&thumbnail=200x200&imageView');
 INSERT INTO `nideshop_goods_specification` VALUES ('4', '1181000', '2', '玛瑙红', 'http://yanxuan.nosdn.127.net/29442127f431a1a1801c195905319427.png?quality=90&thumbnail=200x200&imageView');
 INSERT INTO `nideshop_goods_specification` VALUES ('5', '1181000', '2', '烟白灰', 'http://yanxuan.nosdn.127.net/36f64a7161b67e7fb8ea45be32ecfa25.png?quality=90&thumbnail=200x200&imageView');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_keywords`
@@ -2535,7 +2555,7 @@ CREATE TABLE `nideshop_order` (
 -- ----------------------------
 -- Records of nideshop_order
 -- ----------------------------
-INSERT INTO `nideshop_order` VALUES ('20', '20171004144623437846964', '19', '0', '0', '0', '李鹏军', '340104', '安徽省', '合肥市', '蜀山区', '西二环路与黄山路交口欣塘家园', '15209831990', null, '0', null, null, null, '0.00', '99.00', '0', '0.00', '99.00', '99.00', '2017-10-04 14:46:23', null, null, '0', '0', null, '0.00', null, null, '0.00', null);
+-- INSERT INTO `nideshop_order` VALUES ('20', '20171004144623437846964', '19', '0', '0', '0', '李鹏军', '340104', '安徽省', '合肥市', '蜀山区', '西二环路与黄山路交口欣塘家园', '15209831990', null, '0', null, null, null, '0.00', '99.00', '0', '0.00', '99.00', '99.00', '2017-10-04 14:46:23', null, null, '0', '0', null, '0.00', null, null, '0.00', null);
 
 -- ----------------------------
 -- Table structure for `nideshop_order_goods`
@@ -2563,6 +2583,7 @@ CREATE TABLE `nideshop_order_goods` (
 -- ----------------------------
 -- Records of nideshop_order_goods
 -- ----------------------------
+/*
 INSERT INTO `nideshop_order_goods` VALUES ('14', '11', '1152101', '魔兽世界 部落 奥格瑞玛 拉杆箱 可登机', '1152101', '238', '2', '888.00', '888.00', '烟白灰;玛瑙红;浅杏粉;1.8m床垫*1+枕头*2;1.5m床垫*1+枕头*2', null, '', 'http://yanxuan.nosdn.127.net/c1c62211a17b71a634fa0c705d11fb42.png');
 INSERT INTO `nideshop_order_goods` VALUES ('18', '19', '1138001', '北欧简约山形纹绣花抱枕', '1138001', '218', '1', '79.00', '79.00', null, null, '', 'http://yanxuan.nosdn.127.net/dbc5b25b824c3b3d7ff43b56ca35eee9.png');
 INSERT INTO `nideshop_order_goods` VALUES ('19', '20', '1143015', '婴儿床蔺草席', '1143015', '220', '1', '79.00', '79.00', null, null, '', 'http://yanxuan.nosdn.127.net/50e197854e0ada79c37b7215a1574450.png');
@@ -2574,7 +2595,7 @@ INSERT INTO `nideshop_order_goods` VALUES ('24', '17', '1006013', '双宫茧桑�
 INSERT INTO `nideshop_order_goods` VALUES ('25', '18', '1006013', '双宫茧桑蚕丝被 空调被', '1006013', '10', '1', '0.00', '699.00', null, null, '', 'http://yanxuan.nosdn.127.net/583812520c68ca7995b6fac4c67ae2c7.png');
 INSERT INTO `nideshop_order_goods` VALUES ('26', '19', '1006014', '双宫茧桑蚕丝被 子母被', '1006014', '11', '1', '0.00', '1399.00', null, null, '', 'http://yanxuan.nosdn.127.net/2b537159f0f789034bf8c4b339c43750.png');
 INSERT INTO `nideshop_order_goods` VALUES ('27', '20', '1152031', '魔兽世界-伊利丹颈枕眼罩套装', '1152031', '234', '1', '0.00', '99.00', null, null, '', 'http://yanxuan.nosdn.127.net/fd6e78a397bd9e9804116a36f0270b0a.png');
-
+*/
 -- ----------------------------
 -- Table structure for `nideshop_product`
 -- ----------------------------
@@ -2593,6 +2614,7 @@ CREATE TABLE `nideshop_product` (
 -- ----------------------------
 -- Records of nideshop_product
 -- ----------------------------
+/*
 INSERT INTO `nideshop_product` VALUES ('1', '1181000', '1_3', 'Y100300', '100', '999.00', '0.00');
 INSERT INTO `nideshop_product` VALUES ('2', '1181000', '1_4', 'Y100400', '200', '1500.00', '0.00');
 INSERT INTO `nideshop_product` VALUES ('3', '1181000', '1_5', 'Y100500', '300', '1000.00', '0.00');
@@ -2839,7 +2861,7 @@ INSERT INTO `nideshop_product` VALUES ('243', '1156006', '', '1156006', '100', '
 INSERT INTO `nideshop_product` VALUES ('244', '1166008', '', '1166008', '100', '459.00', '533.00');
 INSERT INTO `nideshop_product` VALUES ('245', '1181000', '2_5', '1181000', '100', '2578.00', '3333.00');
 INSERT INTO `nideshop_product` VALUES ('246', '1181000', '1_5', '1181000', '100', '0.01', '3333.00');
-
+*/
 -- ----------------------------
 -- Table structure for `nideshop_related_goods`
 -- ----------------------------
@@ -2971,9 +2993,9 @@ INSERT INTO `nideshop_shipping` VALUES ('85', 'ZJS', '宅急送', '1');
 INSERT INTO `nideshop_shipping` VALUES ('86', 'ZTE', '众通快递', '1');
 INSERT INTO `nideshop_shipping` VALUES ('87', 'ZTKY', '中铁快运', '1');
 INSERT INTO `nideshop_shipping` VALUES ('88', 'ZTO', '中通速递', '0');
-INSERT INTO `nideshop_shipping` VALUES ('89', 'ZTWL', '中铁物流', '0');
-INSERT INTO `nideshop_shipping` VALUES ('90', 'ZYWL', '中邮物流', '0');
-INSERT INTO `nideshop_shipping` VALUES ('91', 'AMAZON', '亚马逊物流', '0');
+INSERT INTO `nideshop_shipping` VALUES ('89', 'ZTWL', '中铁物流', '1');
+INSERT INTO `nideshop_shipping` VALUES ('90', 'ZYWL', '中邮物流', '1');
+INSERT INTO `nideshop_shipping` VALUES ('91', 'AMAZON', '亚马逊物流', '1');
 INSERT INTO `nideshop_shipping` VALUES ('92', 'SUBIDA', '速必达物流', '1');
 INSERT INTO `nideshop_shipping` VALUES ('93', 'RFEX', '瑞丰速递', '1');
 INSERT INTO `nideshop_shipping` VALUES ('94', 'QUICK', '快客快递', '1');
@@ -3004,8 +3026,8 @@ CREATE TABLE `nideshop_sms_log` (
 -- ----------------------------
 -- Records of nideshop_sms_log
 -- ----------------------------
-INSERT INTO `nideshop_sms_log` VALUES ('2', '1', '18652937243', '1503643657', '4264', null, '登录验证码4264,验证码时效为30分钟。如有疑问请咨询400-111-8220');
-INSERT INTO `nideshop_sms_log` VALUES ('3', '19', '15209831990', '1505798624', '6012', null, '登录验证码6012,验证码时效为30分钟。如有疑问请咨询400-111-8220');
+-- INSERT INTO `nideshop_sms_log` VALUES ('2', '1', '18652937243', '1503643657', '4264', null, '登录验证码4264,验证码时效为30分钟。如有疑问请咨询400-111-8220');
+--  INSERT INTO `nideshop_sms_log` VALUES ('3', '19', '15209831990', '1505798624', '6012', null, '登录验证码6012,验证码时效为30分钟。如有疑问请咨询400-111-8220');
 
 -- ----------------------------
 -- Table structure for `nideshop_specification`
@@ -3023,7 +3045,7 @@ CREATE TABLE `nideshop_specification` (
 -- ----------------------------
 INSERT INTO `nideshop_specification` VALUES ('1', '颜色', '1');
 INSERT INTO `nideshop_specification` VALUES ('2', '规格', '2');
-INSERT INTO `nideshop_specification` VALUES ('4', '重量', '3');
+INSERT INTO `nideshop_specification` VALUES ('3', '重量', '3');
 
 -- ----------------------------
 -- Table structure for `nideshop_topic`
@@ -3048,6 +3070,7 @@ CREATE TABLE `nideshop_topic` (
 -- ----------------------------
 -- Records of nideshop_topic
 -- ----------------------------
+/*
 INSERT INTO `nideshop_topic` VALUES ('314', '关爱他成长的每一个足迹', '<p><img src=\"//yanxuan.nosdn.127.net/75c55a13fde5eb2bc2dd6813b4c565cc.jpg\" class=\"fr-fin\"><img src=\"//yanxuan.nosdn.127.net/e27e1de2b271a28a21c10213b9df7e95.jpg\" class=\"fr-fin\"><img src=\"//yanxuan.nosdn.127.net/9d413d1d28f753cb19096b533d53418d.jpg\" class=\"fr-fin\"><img src=\"//yanxuan.nosdn.127.net/64b0f2f350969e9818a3b6c43c217325.jpg\" class=\"fr-fin\"><img src=\"//yanxuan.nosdn.127.net/a668e6ae7f1fa45565c1eac221787570.jpg\" class=\"fr-fin\"><img src=\"//yanxuan.nosdn.127.net/0d4004e19728f2707f08f4be79bbc774.jpg\" class=\"fr-fin\"><img src=\"//yanxuan.nosdn.127.net/79ee021bbe97de7ecda691de6787241f.jpg\" class=\"fr-fin\"></p>', 'https://yanxuan.nosdn.127.net/14943186689221563.png', 'https://yanxuan.nosdn.127.net/14943267735961674.jpg', '专业运动品牌同厂，毛毛虫鞋买二送一', '2', '0.00', '6.4k', 'https://yanxuan.nosdn.127.net/14943267735961674.jpg', '0', '0');
 INSERT INTO `nideshop_topic` VALUES ('313', '一次解决5个节日送礼难题', '<img src=\"//yanxuan.nosdn.127.net/75c55a13fde5eb2bc2dd6813b4c565cc.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/e27e1de2b271a28a21c10213b9df7e95.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/9d413d1d28f753cb19096b533d53418d.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/64b0f2f350969e9818a3b6c43c217325.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/a668e6ae7f1fa45565c1eac221787570.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/0d4004e19728f2707f08f4be79bbc774.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/79ee021bbe97de7ecda691de6787241f.jpg\">', 'https://yanxuan.nosdn.127.net/14942967243991290.png', 'https://yanxuan.nosdn.127.net/14942996754171334.jpg', '这些就是他们想要的礼物清单', '0', '59.90', '7.8k', 'https://yanxuan.nosdn.127.net/14942996754171334.jpg', '0', '0');
 INSERT INTO `nideshop_topic` VALUES ('300', '秒杀化学洗涤剂的纯天然皂', '<img src=\"//yanxuan.nosdn.127.net/75c55a13fde5eb2bc2dd6813b4c565cc.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/e27e1de2b271a28a21c10213b9df7e95.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/9d413d1d28f753cb19096b533d53418d.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/64b0f2f350969e9818a3b6c43c217325.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/a668e6ae7f1fa45565c1eac221787570.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/0d4004e19728f2707f08f4be79bbc774.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/79ee021bbe97de7ecda691de6787241f.jpg\">', 'https://yanxuan.nosdn.127.net/14939843011001088.png', 'https://yanxuan.nosdn.127.net/14939843143621089.jpg', '前段时间有朋友跟我抱怨，和婆婆住到一起才发现生活理念有太多不和。别的不提，光是洗...', '1', '0.00', '15.3k', 'https://yanxuan.nosdn.127.net/14939843143621089.jpg', '0', '0');
@@ -3068,7 +3091,7 @@ INSERT INTO `nideshop_topic` VALUES ('271', '选式新懒人', '<img src=\"//yan
 INSERT INTO `nideshop_topic` VALUES ('268', '米饭好吃的秘诀：会呼吸的锅', '<img src=\"//yanxuan.nosdn.127.net/75c55a13fde5eb2bc2dd6813b4c565cc.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/e27e1de2b271a28a21c10213b9df7e95.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/9d413d1d28f753cb19096b533d53418d.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/64b0f2f350969e9818a3b6c43c217325.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/a668e6ae7f1fa45565c1eac221787570.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/0d4004e19728f2707f08f4be79bbc774.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/79ee021bbe97de7ecda691de6787241f.jpg\">', 'https://yanxuan.nosdn.127.net/14920712417610604.png', 'https://yanxuan.nosdn.127.net/14920623353130483.jpg', '今年1月份，我们联系到了日本伊贺地区的长谷园，那里有着180年伊贺烧历史的窑厂。...', '1', '0.00', '33.3k', 'https://yanxuan.nosdn.127.net/14920623353130483.jpg', '0', '0');
 INSERT INTO `nideshop_topic` VALUES ('266', '一条丝巾就能提升时髦度', '<img src=\"//yanxuan.nosdn.127.net/75c55a13fde5eb2bc2dd6813b4c565cc.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/e27e1de2b271a28a21c10213b9df7e95.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/9d413d1d28f753cb19096b533d53418d.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/64b0f2f350969e9818a3b6c43c217325.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/a668e6ae7f1fa45565c1eac221787570.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/0d4004e19728f2707f08f4be79bbc774.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/79ee021bbe97de7ecda691de6787241f.jpg\">', 'https://yanxuan.nosdn.127.net/14919005600900208.png', 'https://yanxuan.nosdn.127.net/14919007135160213.jpg', '不知道大家对去年G20时，严选与国礼制造商一起推出的《凤凰于飞》等几款丝巾是否还...', '1', '0.00', '35.0k', 'https://yanxuan.nosdn.127.net/14919007135160213.jpg', '0', '0');
 INSERT INTO `nideshop_topic` VALUES ('264', '设计师们推荐的应季好物', '<img src=\"//yanxuan.nosdn.127.net/75c55a13fde5eb2bc2dd6813b4c565cc.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/e27e1de2b271a28a21c10213b9df7e95.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/9d413d1d28f753cb19096b533d53418d.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/64b0f2f350969e9818a3b6c43c217325.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/a668e6ae7f1fa45565c1eac221787570.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/0d4004e19728f2707f08f4be79bbc774.jpg\">\n    <img src=\"//yanxuan.nosdn.127.net/79ee021bbe97de7ecda691de6787241f.jpg\">', 'https://yanxuan.nosdn.127.net/14920662001560500.png', 'https://yanxuan.nosdn.127.net/14918201901050274.jpg', '原创设计春款系列上新', '0', '29.90', '77.7k', 'https://yanxuan.nosdn.127.net/14918201901050274.jpg', '0', '0');
-
+*/
 -- ----------------------------
 -- Table structure for `nideshop_topic_category`
 -- ----------------------------
@@ -3083,11 +3106,13 @@ CREATE TABLE `nideshop_topic_category` (
 -- ----------------------------
 -- Records of nideshop_topic_category
 -- ----------------------------
+/*
 INSERT INTO `nideshop_topic_category` VALUES ('1', '严选幕后', 'https://yanxuan.nosdn.127.net/dc1b671ad54e16339f1b26cfeec6a1ea.jpg');
 INSERT INTO `nideshop_topic_category` VALUES ('2', '丁磊私物推荐', 'https://yanxuan.nosdn.127.net/1de4da49367dd7c01af1f7a2b23b0237.jpg');
 INSERT INTO `nideshop_topic_category` VALUES ('3', '特色系列', 'https://yanxuan.nosdn.127.net/14939888170021096.png');
 INSERT INTO `nideshop_topic_category` VALUES ('4', '明星商品', 'https://yanxuan.nosdn.127.net/14939888168151095.png');
 INSERT INTO `nideshop_topic_category` VALUES ('5', '严选推荐', 'http://mp123.oss-cn-shenzhen.aliyuncs.com//upload/20170820/1553241265c59c.jpg');
+*/
 
 -- ----------------------------
 -- Table structure for `nideshop_user`
@@ -3150,7 +3175,7 @@ CREATE TABLE `nideshop_user_level` (
 -- ----------------------------
 INSERT INTO `nideshop_user_level` VALUES ('1', '普通用户', '0');
 INSERT INTO `nideshop_user_level` VALUES ('2', 'vip', '10000');
-INSERT INTO `nideshop_user_level` VALUES ('4', '高级VIP', '100000');
+INSERT INTO `nideshop_user_level` VALUES ('3', '高级VIP', '100000');
 
 -- ----------------------------
 -- Table structure for `QRTZ_BLOB_TRIGGERS`
@@ -3202,8 +3227,9 @@ CREATE TABLE `QRTZ_CRON_TRIGGERS` (
 -- ----------------------------
 -- Records of QRTZ_CRON_TRIGGERS
 -- ----------------------------
-INSERT INTO `QRTZ_CRON_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_1', 'DEFAULT', '0 0/30 * * * ?', 'Asia/Shanghai');
-INSERT INTO `QRTZ_CRON_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_2', 'DEFAULT', '0 0/30 * * * ?', 'Asia/Shanghai');
+
+-- INSERT INTO `QRTZ_CRON_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_1', 'DEFAULT', '0 0/30 * * * ?', 'Asia/Shanghai');
+-- INSERT INTO `QRTZ_CRON_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_2', 'DEFAULT', '0 0/30 * * * ?', 'Asia/Shanghai');
 
 -- ----------------------------
 -- Table structure for `QRTZ_FIRED_TRIGGERS`
@@ -3259,8 +3285,8 @@ CREATE TABLE `QRTZ_JOB_DETAILS` (
 -- ----------------------------
 -- Records of QRTZ_JOB_DETAILS
 -- ----------------------------
-INSERT INTO `QRTZ_JOB_DETAILS` VALUES ('PlatformScheduler', 'TASK_1', 'DEFAULT', null, 'com.platform.utils.ScheduleJob', '0', '0', '0', '0', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158BAF593307874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000474657374740008706C6174666F726D74000FE69C89E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
-INSERT INTO `QRTZ_JOB_DETAILS` VALUES ('PlatformScheduler', 'TASK_2', 'DEFAULT', null, 'com.platform.utils.ScheduleJob', '0', '0', '0', '0', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158C377C4607874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000574657374327074000FE697A0E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
+-- INSERT INTO `QRTZ_JOB_DETAILS` VALUES ('PlatformScheduler', 'TASK_1', 'DEFAULT', null, 'com.platform.utils.ScheduleJob', '0', '0', '0', '0', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158BAF593307874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000474657374740008706C6174666F726D74000FE69C89E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
+-- INSERT INTO `QRTZ_JOB_DETAILS` VALUES ('PlatformScheduler', 'TASK_2', 'DEFAULT', null, 'com.platform.utils.ScheduleJob', '0', '0', '0', '0', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158C377C4607874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000574657374327074000FE697A0E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
 
 -- ----------------------------
 -- Table structure for `QRTZ_LOCKS`
@@ -3395,8 +3421,8 @@ CREATE TABLE `QRTZ_TRIGGERS` (
 -- ----------------------------
 -- Records of QRTZ_TRIGGERS
 -- ----------------------------
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_1', 'DEFAULT', 'TASK_1', 'DEFAULT', null, '1507390200000', '-1', '5', 'PAUSED', 'CRON', '1507388787000', '0', null, '2', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158BAF593307874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000474657374740008706C6174666F726D74000FE69C89E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_2', 'DEFAULT', 'TASK_2', 'DEFAULT', null, '1507390200000', '-1', '5', 'PAUSED', 'CRON', '1507388787000', '0', null, '2', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158C377C4607874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000574657374327074000FE697A0E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
+-- INSERT INTO `QRTZ_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_1', 'DEFAULT', 'TASK_1', 'DEFAULT', null, '1507390200000', '-1', '5', 'PAUSED', 'CRON', '1507388787000', '0', null, '2', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158BAF593307874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000474657374740008706C6174666F726D74000FE69C89E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
+-- INSERT INTO `QRTZ_TRIGGERS` VALUES ('PlatformScheduler', 'TASK_2', 'DEFAULT', 'TASK_2', 'DEFAULT', null, '1507390200000', '-1', '5', 'PAUSED', 'CRON', '1507388787000', '0', null, '2', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000D4A4F425F504152414D5F4B455973720025636F6D2E706C6174666F726D2E656E746974792E5363686564756C654A6F62456E7469747900000000000000010200084C00086265616E4E616D657400124C6A6176612F6C616E672F537472696E673B4C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C000E63726F6E45787072657373696F6E71007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C000A6D6574686F644E616D6571007E00094C0006706172616D7371007E00094C000672656D61726B71007E00094C00067374617475737400134C6A6176612F6C616E672F496E74656765723B7870740008746573745461736B7372000E6A6176612E7574696C2E44617465686A81014B5974190300007870770800000158C377C4607874000E3020302F3330202A202A202A203F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000574657374327074000FE697A0E58F82E695B0E6B58BE8AF95737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C75657871007E0013000000017800);
 
 -- ----------------------------
 -- Table structure for `schedule_job`
@@ -3417,8 +3443,8 @@ CREATE TABLE `schedule_job` (
 -- ----------------------------
 -- Records of schedule_job
 -- ----------------------------
-INSERT INTO `schedule_job` VALUES ('1', 'testTask', 'test', 'platform', '0 0/30 * * * ?', '1', '有参数测试', '2016-12-01 23:16:46');
-INSERT INTO `schedule_job` VALUES ('2', 'testTask', 'test2', null, '0 0/30 * * * ?', '1', '无参数测试', '2016-12-03 14:55:56');
+-- INSERT INTO `schedule_job` VALUES ('1', 'testTask', 'test', 'platform', '0 0/30 * * * ?', '1', '有参数测试', '2016-12-01 23:16:46');
+-- INSERT INTO `schedule_job` VALUES ('2', 'testTask', 'test2', null, '0 0/30 * * * ?', '1', '无参数测试', '2016-12-03 14:55:56');
 
 -- ----------------------------
 -- Table structure for `schedule_job_log`
@@ -3459,7 +3485,7 @@ CREATE TABLE `sys_config` (
 -- ----------------------------
 -- Records of sys_config
 -- ----------------------------
-INSERT INTO `sys_config` VALUES ('3', 'CLOUD_STORAGE_CONFIG_KEY', '{"aliyunAccessKeyId":"1","aliyunAccessKeySecret":"1","aliyunBucketName":"1","aliyunDomain":"http://image.111.com","aliyunEndPoint":"1","aliyunPrefix":"1","qcloudBucketName":"","qcloudDomain":"","qcloudPrefix":"","qcloudSecretId":"","qcloudSecretKey":"","qiniuAccessKey":"IXYAaaAwc-ZSuInpEoEJq_CivmcAjWLq1HmpK9dr","qiniuBucketName":"wxmall","qiniuDomain":"http://p9kyr79ne.bkt.clouddn.com","qiniuPrefix":"upload","qiniuSecretKey":"dVlk3dhOAGubYdiCyybE13o5KpjyqGhqh428ufxP","type":1}', '0', '云存储配置信息');
+-- INSERT INTO `sys_config` VALUES ('3', 'CLOUD_STORAGE_CONFIG_KEY', '{"aliyunAccessKeyId":"1","aliyunAccessKeySecret":"1","aliyunBucketName":"1","aliyunDomain":"http://image.111.com","aliyunEndPoint":"1","aliyunPrefix":"1","qcloudBucketName":"","qcloudDomain":"","qcloudPrefix":"","qcloudSecretId":"","qcloudSecretKey":"","qiniuAccessKey":"IXYAaaAwc-ZSuInpEoEJq_CivmcAjWLq1HmpK9dr","qiniuBucketName":"wxmall","qiniuDomain":"http://p9kyr79ne.bkt.clouddn.com","qiniuPrefix":"upload","qiniuSecretKey":"dVlk3dhOAGubYdiCyybE13o5KpjyqGhqh428ufxP","type":1}', '0', '云存储配置信息');
 
 -- ----------------------------
 -- Table structure for `sys_dept`
@@ -3477,8 +3503,8 @@ CREATE TABLE `sys_dept` (
 -- ----------------------------
 -- Records of sys_dept
 -- ----------------------------
-INSERT INTO `sys_dept` VALUES ('1', '0', '总部', '0', '0');
-INSERT INTO `sys_dept` VALUES ('2', '1', '合肥分公司', '1', '0');
+INSERT INTO `sys_dept` VALUES ('1', '0', '北京总部', '0', '0');
+INSERT INTO `sys_dept` VALUES ('2', '1', '武汉分公司', '1', '0');
 INSERT INTO `sys_dept` VALUES ('3', '1', '上海分公司', '2', '0');
 INSERT INTO `sys_dept` VALUES ('4', '3', '技术部', '0', '0');
 INSERT INTO `sys_dept` VALUES ('5', '3', '销售部', '1', '0');
@@ -3547,42 +3573,45 @@ CREATE TABLE `sys_menu` (
 -- ----------------------------
 INSERT INTO `sys_menu` VALUES ('1', '0', '系统管理', null, null, '0', 'fa fa-cog', '11', '0');
 INSERT INTO `sys_menu` VALUES ('2', '1', '管理员列表', 'sys/user.html', null, '1', 'fa fa-user', '1', '0');
-INSERT INTO `sys_menu` VALUES ('3', '1', '角色管理', 'sys/role.html', null, '1', 'fa fa-user-secret', '2', '0');
-INSERT INTO `sys_menu` VALUES ('4', '1', '菜单管理', 'sys/menu.html', null, '1', 'fa fa-folder-open', '4', '0');
-INSERT INTO `sys_menu` VALUES ('5', '1', 'SQL监控', 'druid/sql.html', null, '1', 'fa fa-linux', '9', '0');
-INSERT INTO `sys_menu` VALUES ('6', '1', '定时任务', 'sys/schedule.html', null, '1', 'fa fa-tasks', '5', '0');
-INSERT INTO `sys_menu` VALUES ('7', '6', '查看', null, 'sys:schedule:list,sys:schedule:info', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('8', '6', '新增', null, 'sys:schedule:save', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('9', '6', '修改', null, 'sys:schedule:update', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('10', '6', '删除', null, 'sys:schedule:delete', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('11', '6', '暂停', null, 'sys:schedule:pause', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('12', '6', '恢复', null, 'sys:schedule:resume', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('13', '6', '立即执行', null, 'sys:schedule:run', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('14', '6', '日志列表', null, 'sys:schedule:log', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('15', '2', '查看', null, 'sys:user:list,sys:user:info', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('16', '2', '新增', null, 'sys:user:save,sys:role:select', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('17', '2', '修改', null, 'sys:user:update,sys:role:select', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('18', '2', '删除', null, 'sys:user:delete', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('5', '1', 'SQL监控', 'druid/sql.html', null, '1', 'fa fa-linux', '9', '0');
+# INSERT INTO `sys_menu` VALUES ('6', '1', '定时任务', 'sys/schedule.html', null, '1', 'fa fa-tasks', '5', '0');
+# INSERT INTO `sys_menu` VALUES ('7', '6', '查看', null, 'sys:schedule:list,sys:schedule:info', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('8', '6', '新增', null, 'sys:schedule:save', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('9', '6', '修改', null, 'sys:schedule:update', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('10', '6', '删除', null, 'sys:schedule:delete', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('11', '6', '暂停', null, 'sys:schedule:pause', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('12', '6', '恢复', null, 'sys:schedule:resume', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('13', '6', '立即执行', null, 'sys:schedule:run', '2', null, '0', '0');
+# INSERT INTO `sys_menu` VALUES ('14', '6', '日志列表', null, 'sys:schedule:log', '2', null, '0', '0');
+
+INSERT INTO `sys_menu` VALUES ('3', '1', '角色管理', 'sys/role.html', null, '1', 'fa fa-user-secret', '2', '0');
 INSERT INTO `sys_menu` VALUES ('19', '3', '查看', null, 'sys:role:list,sys:role:info', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('20', '3', '新增', null, 'sys:role:save,sys:menu:perms', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('21', '3', '修改', null, 'sys:role:update,sys:menu:perms', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('22', '3', '删除', null, 'sys:role:delete', '2', null, '0', '0');
+
+INSERT INTO `sys_menu` VALUES ('4', '1', '菜单管理', 'sys/menu.html', null, '1', 'fa fa-folder-open', '4', '0');
 INSERT INTO `sys_menu` VALUES ('23', '4', '查看', null, 'sys:menu:list,sys:menu:info', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('24', '4', '新增', null, 'sys:menu:save,sys:menu:select', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('25', '4', '修改', null, 'sys:menu:update,sys:menu:select', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('26', '4', '删除', null, 'sys:menu:delete', '2', null, '0', '0');
+
 INSERT INTO `sys_menu` VALUES ('27', '1', '系统参数', 'sys/config.html', 'sys:config:list,sys:config:info,sys:config:save,sys:config:update,sys:config:delete', '1', 'fa fa-sun-o', '7', '0');
-INSERT INTO `sys_menu` VALUES ('28', '1', '代码生成器', 'sys/generator.html', 'sys:generator:list,sys:generator:code', '1', 'fa fa-rocket', '10', '0');
-INSERT INTO `sys_menu` VALUES ('29', '1', '系统日志', 'sys/log.html', 'sys:log:list', '1', 'fa fa-file-text-o', '8', '0');
-INSERT INTO `sys_menu` VALUES ('30', '1', '文件上传', 'sys/oss.html', 'sys:oss:all', '1', 'fa fa-file-image-o', '6', '0');
-INSERT INTO `sys_menu` VALUES ('31', '0', '功能测试', null, null, '0', 'fa fa-bug', '11', '0');
+# INSERT INTO `sys_menu` VALUES ('28', '1', '代码生成器', 'sys/generator.html', 'sys:generator:list,sys:generator:code', '1', 'fa fa-rocket', '10', '0');
+# INSERT INTO `sys_menu` VALUES ('29', '1', '系统日志', 'sys/log.html', 'sys:log:list', '1', 'fa fa-file-text-o', '8', '0');
+# INSERT INTO `sys_menu` VALUES ('30', '1', '文件上传', 'sys/oss.html', 'sys:oss:all', '1', 'fa fa-file-image-o', '6', '0');
+# INSERT INTO `sys_menu` VALUES ('31', '0', '功能测试', null, null, '0', 'fa fa-bug', '11', '0');
 INSERT INTO `sys_menu` VALUES ('200', '0', '会员管理', null, null, '0', 'fa fa-user-circle-o', '1', '0');
 INSERT INTO `sys_menu` VALUES ('201', '200', '会员管理', 'shop/shopuser.html', null, '1', 'fa fa-user-md', '1', '0');
 INSERT INTO `sys_menu` VALUES ('202', '201', '查看', null, 'user:list,user:info', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('203', '201', '新增', null, 'user:save', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('204', '201', '修改', null, 'user:update', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('205', '201', '删除', null, 'user:delete', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('206', '31', 'iviewDemo', 'test/iviewDemo.html', null, '1', 'fa fa-etsy', '0', '0');
+# INSERT INTO `sys_menu` VALUES ('206', '31', 'iviewDemo', 'test/iviewDemo.html', null, '1', 'fa fa-etsy', '0', '0');
 INSERT INTO `sys_menu` VALUES ('207', '200', '会员等级', 'shop/userlevel.html', null, '1', 'fa fa-star-o', '0', '1');
 INSERT INTO `sys_menu` VALUES ('208', '207', '查看', null, 'userlevel:list,userlevel:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('209', '207', '新增', null, 'userlevel:save', '2', null, '6', '0');
@@ -3593,143 +3622,158 @@ INSERT INTO `sys_menu` VALUES ('213', '212', '查看', null, 'address:list,addre
 INSERT INTO `sys_menu` VALUES ('214', '212', '新增', null, 'address:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('215', '212', '修改', null, 'address:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('216', '212', '删除', null, 'address:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('222', '0', '商城配置', null, null, '0', 'fa fa-shopping-cart', '2', '0');
-INSERT INTO `sys_menu` VALUES ('223', '222', '商品属性种类', 'shop/attributecategory.html', null, '1', 'fa fa-sun-o', '0', '0');
-INSERT INTO `sys_menu` VALUES ('224', '223', '查看', null, 'attributecategory:list,attributecategory:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('225', '223', '新增', null, 'attributecategory:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('226', '223', '修改', null, 'attributecategory:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('227', '223', '删除', null, 'attributecategory:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('233', '243', '广告列表', 'shop/ad.html', null, '1', 'fa fa-pencil', '1', '0');
-INSERT INTO `sys_menu` VALUES ('234', '233', '查看', null, 'ad:list,ad:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('235', '233', '新增', null, 'ad:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('236', '233', '修改', null, 'ad:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('237', '233', '删除', null, 'ad:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('238', '243', '广告位置', 'shop/adposition.html', null, '1', 'fa fa-map-pin', '0', '0');
-INSERT INTO `sys_menu` VALUES ('239', '238', '查看', null, 'adposition:list,adposition:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('240', '238', '新增', null, 'adposition:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('241', '238', '修改', null, 'adposition:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('242', '238', '删除', null, 'adposition:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('243', '0', '推广管理', null, null, '0', 'fa fa-hand-paper-o', '5', '0');
-INSERT INTO `sys_menu` VALUES ('244', '243', '优惠劵管理', 'shop/coupon.html', null, '1', 'fa fa-cc-visa', '2', '0');
-INSERT INTO `sys_menu` VALUES ('245', '244', '查看', null, 'coupon:list,coupon:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('246', '244', '新增', null, 'coupon:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('247', '244', '修改', null, 'coupon:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('248', '244', '删除', null, 'coupon:delete', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('249', '200', '会员优惠劵', 'shop/usercoupon.html', null, '1', 'fa fa-cc-visa', '2', '0');
 INSERT INTO `sys_menu` VALUES ('250', '249', '查看', null, 'usercoupon:list,usercoupon:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('251', '249', '新增', null, 'usercoupon:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('252', '249', '修改', null, 'usercoupon:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('253', '249', '删除', null, 'usercoupon:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('254', '222', '品牌制造商', 'shop/brand.html', null, '1', 'fa fa-registered', '5', '0');
-INSERT INTO `sys_menu` VALUES ('255', '254', '查看', null, 'brand:list,brand:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('256', '254', '新增', null, 'brand:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('257', '254', '修改', null, 'brand:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('258', '254', '删除', null, 'brand:delete', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('264', '200', '会员收藏', 'shop/collect.html', null, '1', 'fa fa-star', '3', '0');
+INSERT INTO `sys_menu` VALUES ('265', '264', '查看', null, 'collect:list,collect:info', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('266', '264', '删除', null, 'collect:delete', '2', null, '6', '0');
+
+INSERT INTO `sys_menu` VALUES ('222', '0', '商城管理', null, null, '0', 'fa fa-shopping-cart', '2', '0');
+# INSERT INTO `sys_menu` VALUES ('223', '222', '商品属性种类', 'shop/attributecategory.html', null, '1', 'fa fa-sun-o', '0', '0');
+# INSERT INTO `sys_menu` VALUES ('224', '223', '查看', null, 'attributecategory:list,attributecategory:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('225', '223', '新增', null, 'attributecategory:save', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('226', '223', '修改', null, 'attributecategory:update', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('227', '223', '删除', null, 'attributecategory:delete', '2', null, '6', '0');
+
+INSERT INTO `sys_menu` VALUES ('243', '0', '推广管理', null, null, '0', 'fa fa-hand-paper-o', '5', '0');
+INSERT INTO `sys_menu` VALUES ('238', '243', '广告位置', 'shop/adposition.html', null, '1', 'fa fa-map-pin', '0', '0');
+INSERT INTO `sys_menu` VALUES ('239', '238', '查看', null, 'adposition:list,adposition:info', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('240', '238', '新增', null, 'adposition:save', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('241', '238', '修改', null, 'adposition:update', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('242', '238', '删除', null, 'adposition:delete', '2', null, '6', '0');
+
+INSERT INTO `sys_menu` VALUES ('233', '243', '广告列表', 'shop/ad.html', null, '1', 'fa fa-pencil', '1', '0');
+INSERT INTO `sys_menu` VALUES ('234', '233', '查看', null, 'ad:list,ad:info', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('235', '233', '新增', null, 'ad:save', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('236', '233', '修改', null, 'ad:update', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('237', '233', '删除', null, 'ad:delete', '2', null, '6', '0');
+
+INSERT INTO `sys_menu` VALUES ('244', '243', '优惠劵管理', 'shop/coupon.html', null, '1', 'fa fa-cc-visa', '2', '0');
+INSERT INTO `sys_menu` VALUES ('245', '244', '查看', null, 'coupon:list,coupon:info', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('246', '244', '新增', null, 'coupon:save', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('247', '244', '修改', null, 'coupon:update', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('248', '244', '删除', null, 'coupon:delete', '2', null, '6', '0');
+INSERT INTO `sys_menu` VALUES ('330', '244', '发放', null, 'coupon:publish', '2', null, '4', '0');
+
+# INSERT INTO `sys_menu` VALUES ('254', '222', '品牌制造商', 'shop/brand.html', null, '1', 'fa fa-registered', '5', '0');
+# INSERT INTO `sys_menu` VALUES ('255', '254', '查看', null, 'brand:list,brand:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('256', '254', '新增', null, 'brand:save', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('257', '254', '修改', null, 'brand:update', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('258', '254', '删除', null, 'brand:delete', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('259', '222', '商品规格', 'shop/specification.html', null, '1', 'fa fa-hand-rock-o', '1', '0');
 INSERT INTO `sys_menu` VALUES ('260', '259', '查看', null, 'specification:list,specification:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('261', '259', '新增', null, 'specification:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('262', '259', '修改', null, 'specification:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('263', '259', '删除', null, 'specification:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('264', '200', '会员收藏', 'shop/collect.html', null, '1', 'fa fa-star', '3', '0');
-INSERT INTO `sys_menu` VALUES ('265', '264', '查看', null, 'collect:list,collect:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('266', '264', '删除', null, 'collect:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('270', '243', '专题管理', 'shop/topic.html', null, '1', 'fa fa-ticket', '5', '1');
-INSERT INTO `sys_menu` VALUES ('271', '270', '查看', null, 'topic:list,topic:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('272', '270', '新增', null, 'topic:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('273', '270', '修改', null, 'topic:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('274', '270', '删除', null, 'topic:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('275', '243', '专题分类', 'shop/topiccategory.html', null, '1', 'fa fa-tint', '4', '1');
-INSERT INTO `sys_menu` VALUES ('276', '275', '查看', null, 'topiccategory:list,topiccategory:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('277', '275', '新增', null, 'topiccategory:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('278', '275', '修改', null, 'topiccategory:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('279', '275', '删除', null, 'topiccategory:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('280', '200', '会员足迹', 'shop/footprint.html', null, '1', 'fa fa-history', '6', '0');
-INSERT INTO `sys_menu` VALUES ('281', '280', '查看', null, 'footprint:list,footprint:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('282', '280', '删除', null, 'footprint:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('283', '200', '搜索历史', 'shop/searchhistory.html', null, '1', 'fa fa-search', '6', '0');
-INSERT INTO `sys_menu` VALUES ('284', '283', '查看', null, 'searchhistory:list,searchhistory:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('285', '283', '删除', null, 'searchhistory:delete', '2', null, '6', '0');
+
+# INSERT INTO `sys_menu` VALUES ('270', '243', '专题管理', 'shop/topic.html', null, '1', 'fa fa-ticket', '5', '1');
+# INSERT INTO `sys_menu` VALUES ('271', '270', '查看', null, 'topic:list,topic:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('272', '270', '新增', null, 'topic:save', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('273', '270', '修改', null, 'topic:update', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('274', '270', '删除', null, 'topic:delete', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('275', '243', '专题分类', 'shop/topiccategory.html', null, '1', 'fa fa-tint', '4', '1');
+# INSERT INTO `sys_menu` VALUES ('276', '275', '查看', null, 'topiccategory:list,topiccategory:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('277', '275', '新增', null, 'topiccategory:save', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('278', '275', '修改', null, 'topiccategory:update', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('279', '275', '删除', null, 'topiccategory:delete', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('280', '200', '会员足迹', 'shop/footprint.html', null, '1', 'fa fa-history', '6', '0');
+# INSERT INTO `sys_menu` VALUES ('281', '280', '查看', null, 'footprint:list,footprint:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('282', '280', '删除', null, 'footprint:delete', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('283', '200', '搜索历史', 'shop/searchhistory.html', null, '1', 'fa fa-search', '6', '0');
+# INSERT INTO `sys_menu` VALUES ('284', '283', '查看', null, 'searchhistory:list,searchhistory:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('285', '283', '删除', null, 'searchhistory:delete', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('286', '200', '购物车', 'shop/cart.html', null, '1', 'fa fa-shopping-cart', '6', '0');
 INSERT INTO `sys_menu` VALUES ('287', '286', '查看', null, 'cart:list,cart:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('288', '286', '删除', null, 'cart:delete', '2', null, '6', '0');
+
 INSERT INTO `sys_menu` VALUES ('289', '357', '所有商品', 'shop/goods.html', null, '1', 'fa fa-shopping-bag', '1', '0');
 INSERT INTO `sys_menu` VALUES ('290', '289', '查看', null, 'goods:list,goods:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('291', '289', '新增', null, 'goods:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('292', '289', '修改', null, 'goods:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('293', '289', '删除', null, 'goods:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('294', '374', '所有管理', 'shop/order.html', null, '1', 'fa fa-sitemap', '6', '0');
+
+INSERT INTO `sys_menu` VALUES ('374', '0', '订单管理', null, null, '0', 'fa fa-first-order', '4', '0');
+INSERT INTO `sys_menu` VALUES ('294', '374', '订单列表', 'shop/order.html', null, '1', 'fa fa-sitemap', '6', '0');
 INSERT INTO `sys_menu` VALUES ('295', '294', '查看', null, 'order:list,order:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('296', '294', '发货', null, 'order:sendGoods', '2', null, '6', '0');
+
 INSERT INTO `sys_menu` VALUES ('297', '222', '商品类型', 'shop/category.html', null, '1', 'fa fa-ship', '3', '0');
 INSERT INTO `sys_menu` VALUES ('298', '297', '查看', null, 'category:list,category:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('299', '297', '新增', null, 'category:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('300', '297', '修改', null, 'category:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('301', '297', '删除', null, 'category:delete', '2', null, '6', '0');
+
 INSERT INTO `sys_menu` VALUES ('302', '1', '通用字典表', 'sys/macro.html', null, '1', 'fa fa-book', '6', '0');
 INSERT INTO `sys_menu` VALUES ('303', '302', '查看', null, 'sys:macro:list,sys:macro:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('304', '302', '新增', null, 'sys:macro:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('305', '302', '修改', null, 'sys:macro:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('306', '302', '删除', null, 'sys:macro:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('307', '222', '渠道管理', 'shop/channel.html', null, '1', 'fa fa-road', '2', '1');
-INSERT INTO `sys_menu` VALUES ('308', '307', '查看', null, 'channel:list,channel:info', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('309', '307', '新增', null, 'channel:save', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('310', '307', '修改', null, 'channel:update', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('311', '307', '删除', null, 'channel:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('312', '0', '微信公众号', null, null, '0', 'fa fa-weixin', '6', '0');
-INSERT INTO `sys_menu` VALUES ('313', '0', '进销存', null, null, '0', 'fa fa-truck', '6', '0');
-INSERT INTO `sys_menu` VALUES ('314', '0', '统计报表', null, null, '0', 'fa fa-line-chart', '7', '0');
+# INSERT INTO `sys_menu` VALUES ('307', '222', '渠道管理', 'shop/channel.html', null, '1', 'fa fa-road', '2', '1');
+# INSERT INTO `sys_menu` VALUES ('308', '307', '查看', null, 'channel:list,channel:info', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('309', '307', '新增', null, 'channel:save', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('310', '307', '修改', null, 'channel:update', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('311', '307', '删除', null, 'channel:delete', '2', null, '6', '0');
+# INSERT INTO `sys_menu` VALUES ('312', '0', '微信公众号', null, null, '0', 'fa fa-weixin', '6', '0');
+# INSERT INTO `sys_menu` VALUES ('313', '0', '进销存', null, null, '0', 'fa fa-truck', '6', '0');
+# INSERT INTO `sys_menu` VALUES ('314', '0', '统计报表', null, null, '0', 'fa fa-line-chart', '7', '0');
 INSERT INTO `sys_menu` VALUES ('315', '222', '商品问答', 'shop/goodsissue.html', null, '1', 'fa fa-question-circle-o', '6', '0');
 INSERT INTO `sys_menu` VALUES ('316', '315', '查看', null, 'goodsissue:list,goodsissue:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('317', '315', '新增', null, 'goodsissue:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('318', '315', '修改', null, 'goodsissue:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('319', '315', '删除', null, 'goodsissue:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('325', '222', '反馈', 'shop/feedback.html', null, '1', 'fa fa-mail-reply-all', '6', '0');
+INSERT INTO `sys_menu` VALUES ('325', '222', '用户反馈', 'shop/feedback.html', null, '1', 'fa fa-mail-reply-all', '6', '0');
 INSERT INTO `sys_menu` VALUES ('326', '325', '查看', null, 'feedback:list,feedback:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('327', '325', '新增', null, 'feedback:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('328', '325', '修改', null, 'feedback:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('329', '325', '删除', null, 'feedback:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('330', '244', '发放', null, 'coupon:publish', '2', null, '4', '0');
+
 INSERT INTO `sys_menu` VALUES ('331', '222', '关键词', 'shop/keywords.html', null, '1', 'fa fa-underline', '6', '0');
 INSERT INTO `sys_menu` VALUES ('332', '331', '查看', null, 'keywords:list,keywords:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('333', '331', '新增', null, 'keywords:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('334', '331', '修改', null, 'keywords:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('335', '331', '删除', null, 'keywords:delete', '2', null, '6', '0');
+
 INSERT INTO `sys_menu` VALUES ('336', '357', '用户评论', 'shop/comment.html', null, '1', 'fa fa-commenting', '6', '0');
 INSERT INTO `sys_menu` VALUES ('337', '336', '查看', null, 'comment:list,comment:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('338', '336', '新增', null, 'comment:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('339', '336', '修改', null, 'comment:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('340', '336', '删除', null, 'comment:delete', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('341', '336', '修改状态', null, 'comment:toggleStatus', '2', null, '0', '0');
+
 INSERT INTO `sys_menu` VALUES ('342', '357', '产品设置', 'shop/product.html', null, '1', 'fa fa-paypal', '3', '0');
 INSERT INTO `sys_menu` VALUES ('343', '342', '查看', null, 'product:list,product:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('344', '342', '新增', null, 'product:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('345', '342', '修改', null, 'product:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('346', '342', '删除', null, 'product:delete', '2', null, '6', '0');
+
+INSERT INTO `sys_menu` VALUES ('357', '0', '编辑商品', null, null, '0', 'fa fa-edit', '3', '0');
 INSERT INTO `sys_menu` VALUES ('352', '357', '商品规格', 'shop/goodsspecification.html', null, '1', 'fa fa-deafness', '2', '0');
 INSERT INTO `sys_menu` VALUES ('353', '352', '查看', null, 'goodsspecification:list,goodsspecification:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('354', '352', '新增', null, 'goodsspecification:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('355', '352', '修改', null, 'goodsspecification:update', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('356', '352', '删除', null, 'goodsspecification:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('357', '0', '编辑商品', null, null, '0', 'fa fa-edit', '3', '0');
+
 INSERT INTO `sys_menu` VALUES ('358', '357', '商品回收站', 'shop/goodshistory.html', '', '1', 'fa fa-history', '12', '0');
 INSERT INTO `sys_menu` VALUES ('359', '358', '恢复', null, 'goods:back', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('360', '294', '确认收货', null, 'order:confirm', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('366', '0', 'CMS模块', null, null, '0', 'fa fa-leanpub', '6', '0');
+# INSERT INTO `sys_menu` VALUES ('366', '0', 'CMS模块', null, null, '0', 'fa fa-leanpub', '6', '0');
 INSERT INTO `sys_menu` VALUES ('368', '1', '部门管理', 'sys/dept.html', null, '1', 'fa fa-sitemap', '3', '0');
 INSERT INTO `sys_menu` VALUES ('369', '368', '查看', null, 'sys:dept:list,sys:dept:info', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('370', '368', '新增', null, 'sys:dept:save', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('371', '368', '修改', null, 'sys:dept:update', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('372', '368', '删除', null, 'sys:dept:delete', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('373', '368', '选择部门', null, 'sys:dept:select', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('374', '0', '订单管理', null, null, '0', 'fa fa-first-order', '4', '0');
-INSERT INTO `sys_menu` VALUES ('375', '0', '短信平台', null, null, '0', 'fa fa-television', '9', '0');
-INSERT INTO `sys_menu` VALUES ('376','375', '短信配置', 'sys/smslog.html', 'sys:smslog:list,sys:smslog:info', '1', 'fa fa-envelope-open', '1', '0');
+# INSERT INTO `sys_menu` VALUES ('375', '0', '短信平台', null, null, '0', 'fa fa-television', '9', '0');
+# INSERT INTO `sys_menu` VALUES ('376','375', '短信配置', 'sys/smslog.html', 'sys:smslog:list,sys:smslog:info', '1', 'fa fa-envelope-open', '1', '0');
 INSERT INTO `sys_menu` VALUES ('377', '1', '地区管理', 'sys/region.html', null, '1', 'fa fa-map-pin', '8', '0');
 INSERT INTO `sys_menu` VALUES ('378', '377', '删除', null, 'sys:region:delete', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('379', '377', '修改', '', 'sys:region:update', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('380', '377', '新增', null, 'sys:region:save', '2', null, '0', '0');
 INSERT INTO `sys_menu` VALUES ('381', '377', '查看', null, 'sys:region:list,sys:region:info', '2', null, '0', '0');
-INSERT INTO `sys_menu` VALUES ('382', '31', 'swagger-ui.html', 'swagger-ui.html', '', '1', 'fa fa-code', '0', '0');
+# INSERT INTO `sys_menu` VALUES ('382', '31', 'swagger-ui.html', 'swagger-ui.html', '', '1', 'fa fa-code', '0', '0');
 -- ----------------------------
 -- Table structure for `sys_oss`
 -- ----------------------------
@@ -3853,17 +3897,11 @@ create table sys_region
 )
 ;
 
-create index agency_id
-  on sys_region (agency_id)
-;
+create index region_agency_id on sys_region (agency_id) ;
 
-create index parent_id
-  on sys_region (parent_id)
-;
+create index region_parent_id on sys_region (parent_id) ;
 
-create index region_type
-  on sys_region (type)
-;
+create index region_type on sys_region (type) ;
 
 DROP TABLE IF EXISTS `sys_sms_log`;
 CREATE TABLE `sys_sms_log` (
@@ -3884,7 +3922,7 @@ CREATE TABLE `sys_sms_log` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO sys_config VALUES ('2', 'SMS_CONFIG_KEY', '{"domain":"http://web.cr6868.com/asmx/smsservice.aspx?","name":"","pwd":"","sign":"","type":1}', 0, '短信配置');
+# INSERT INTO sys_config VALUES ('2', 'SMS_CONFIG_KEY', '{"domain":"http://web.cr6868.com/asmx/smsservice.aspx?","name":"","pwd":"","sign":"","type":1}', 0, '短信配置');
 
 /** 2018-01-23 **/
 ALTER TABLE nideshop_address ADD is_default INT(1) DEFAULT 0 NULL;

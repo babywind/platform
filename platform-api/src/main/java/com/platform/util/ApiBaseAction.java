@@ -32,7 +32,7 @@ import java.util.Map;
  * @date 2016年9月2日
  */
 public class ApiBaseAction {
-    protected Logger logger = Logger.getLogger(getClass());
+    private Logger logger = Logger.getLogger(getClass());
     /**
      * 得到request对象
      */
@@ -71,7 +71,7 @@ public class ApiBaseAction {
      * @date 2016年9月2日
      * @author zhuliyun
      */
-    public Map<String, Object> toResponsObject(int requestCode, String msg, Object data) {
+    protected Map<String, Object> toResponsObject(int requestCode, String msg, Object data) {
         Map<String, Object> obj = new HashMap<String, Object>();
         obj.put("errno", requestCode);
         obj.put("errmsg", msg);
@@ -86,7 +86,7 @@ public class ApiBaseAction {
         return rp;
     }
 
-    public Map<String, Object> toResponsMsgSuccess(String msg) {
+    protected Map<String, Object> toResponsMsgSuccess(String msg) {
         return toResponsObject(0, msg, "");
     }
 
@@ -123,7 +123,7 @@ public class ApiBaseAction {
      *
      * @return 客户端Ip
      */
-    public String getClientIp() {
+    protected String getClientIp() {
         String xff = request.getHeader("x-forwarded-for");
         if (xff == null) {
             return "8.8.8.8";
@@ -134,7 +134,7 @@ public class ApiBaseAction {
     public JSONObject getJsonRequest() {
         JSONObject result = null;
         StringBuilder sb = new StringBuilder();
-        try (BufferedReader reader = request.getReader();) {
+        try (BufferedReader reader = request.getReader()) {
             char[] buff = new char[1024];
             int len;
             while ((len = reader.read(buff)) != -1) {

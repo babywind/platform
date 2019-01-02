@@ -4,11 +4,12 @@ $(function () {
         colModel: [
             {label: 'id', name: 'id', index: 'id', key: true, hidden: true},
             {label: '问题', name: 'question', index: 'question', width: 80},
-            {label: '回答', name: 'answer', index: 'answer', width: 150}]
+            {label: '回答', name: 'answer', index: 'answer', width: 150}
+        ]
     });
 });
 
-var vm = new Vue({
+let vm = new Vue({
     el: '#rrapp',
     data: {
         showList: true,
@@ -33,7 +34,7 @@ var vm = new Vue({
             vm.goodsIssue = {};
         },
         update: function (event) {
-            var id = getSelectedRow("#jqGrid");
+            let id = getSelectedRow("#jqGrid");
             if (id == null) {
                 return;
             }
@@ -43,7 +44,7 @@ var vm = new Vue({
             vm.getInfo(id)
         },
         saveOrUpdate: function (event) {
-            var url = vm.goodsIssue.id == null ? "../goodsissue/save" : "../goodsissue/update";
+            let url = vm.goodsIssue.id == null ? "../goodsissue/save" : "../goodsissue/update";
 
             Ajax.request({
                 type: "POST",
@@ -58,7 +59,7 @@ var vm = new Vue({
             });
         },
         del: function (event) {
-            var ids = getSelectedRows("#jqGrid");
+            let ids = getSelectedRows("#jqGrid");
             if (ids == null) {
                 return;
             }
@@ -89,7 +90,7 @@ var vm = new Vue({
         },
         reload: function (event) {
             vm.showList = true;
-            var page = $("#jqGrid").jqGrid('getGridParam', 'page');
+            let page = $("#jqGrid").jqGrid('getGridParam', 'page');
             $("#jqGrid").jqGrid('setGridParam', {
                 postData: {'question': vm.q.question, 'goodsName': vm.q.goodsName},
                 page: page

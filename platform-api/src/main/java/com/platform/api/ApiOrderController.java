@@ -58,31 +58,36 @@ public class ApiOrderController extends ApiBaseAction {
     @PostMapping("list")
     public Object list(@LoginUser UserVo loginUser,
                        @RequestParam(value = "page", defaultValue = "1") Integer page,
-                       @RequestParam(value = "size", defaultValue = "10") Integer size) {
+                       @RequestParam(value = "size", defaultValue = "10") Integer size,
+                       Integer orderState) {
         //
-        Map params = new HashMap();
+        Map<String, Object> params = new HashMap<>();
         params.put("user_id", loginUser.getUserId());
         params.put("page", page);
         params.put("limit", size);
+        params.put("order_status", orderState);
         params.put("sidx", "id");
         params.put("order", "asc");
         //查询列表数据
         Query query = new Query(params);
         List<OrderVo> orderEntityList = orderService.queryList(query);
-        int total = orderService.queryTotal(query);
-        ApiPageUtils pageUtil = new ApiPageUtils(orderEntityList, total, query.getLimit(), query.getPage());
-        //
         for (OrderVo item : orderEntityList) {
-            Map orderGoodsParam = new HashMap();
+            Map<String, Object> orderGoodsParam = new HashMap<>();
             orderGoodsParam.put("order_id", item.getId());
             //订单的商品
             List<OrderGoodsVo> goodsList = orderGoodsService.queryList(orderGoodsParam);
+
+            item.setGoodsList(goodsList);
+
             Integer goodsCount = 0;
             for (OrderGoodsVo orderGoodsEntity : goodsList) {
                 goodsCount += orderGoodsEntity.getNumber();
                 item.setGoodsCount(goodsCount);
             }
         }
+
+	    int total = orderService.queryTotal(query);
+        ApiPageUtils pageUtil = new ApiPageUtils(orderEntityList, total, query.getLimit(), query.getPage());
         return toResponsSuccess(pageUtil);
     }
 
@@ -92,13 +97,13 @@ public class ApiOrderController extends ApiBaseAction {
     @ApiOperation(value = "获取订单详情")
     @PostMapping("detail")
     public Object detail(Integer orderId) {
-        Map resultObj = new HashMap();
+        Map<String, Object> resultObj = new HashMap<>();
         //
         OrderVo orderInfo = orderService.queryObject(orderId);
         if (null == orderInfo) {
             return toResponsObject(400, "订单不存在", "");
         }
-        Map orderGoodsParam = new HashMap();
+        Map<String, Object> orderGoodsParam = new HashMap<>();
         orderGoodsParam.put("order_id", orderId);
         //订单的商品
         List<OrderGoodsVo> orderGoods = orderGoodsService.queryList(orderGoodsParam);

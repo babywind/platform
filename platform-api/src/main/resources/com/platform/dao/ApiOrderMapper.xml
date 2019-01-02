@@ -55,6 +55,9 @@
             <if test="user_id != null">
                 and user_id = #{user_id}
             </if>
+	        <if test="order_status != null">
+		    	and order_status = #{order_status}
+	        </if>
         </where>
         <choose>
             <when test="sidx != null and sidx.trim() != ''">
@@ -71,6 +74,14 @@
 
     <select id="queryTotal" resultType="int">
 		select count(*) from nideshop_order
+	    <where>
+		    <if test="user_id != null">
+			    and user_id = #{user_id}
+		    </if>
+		    <if test="order_status != null">
+			    and order_status = #{order_status}
+		    </if>
+	    </where>
 	</select>
 
     <insert id="save" parameterType="com.platform.entity.OrderVo" useGeneratedKeys="true" keyProperty="id">

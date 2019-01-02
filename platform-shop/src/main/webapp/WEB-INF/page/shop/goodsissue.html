@@ -37,7 +37,7 @@
                 <i-input v-model="goodsIssue.question" placeholder="问题"/>
             </Form-item>
             <Form-item label="回答" prop="answer">
-                <i-input v-model="goodsIssue.answer" placeholder="回答"/>
+                <i-input type="textarea" :rows="4" v-model="goodsIssue.answer" placeholder="回答"/>
             </Form-item>
             <Form-item>
                 <i-button type="primary" @click="handleSubmit('formValidate')">提交</i-button>

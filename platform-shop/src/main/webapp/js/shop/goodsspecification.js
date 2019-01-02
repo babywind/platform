@@ -19,7 +19,7 @@ $(function () {
     });
 });
 
-var vm = new Vue({
+let vm = new Vue({
     el: '#rrapp',
     data: {
         showList: true,
@@ -66,7 +66,7 @@ var vm = new Vue({
             vm.getGoodss();
         },
         update: function (event) {
-            var id = getSelectedRow("#jqGrid");
+            let id = getSelectedRow("#jqGrid");
             if (id == null) {
                 return;
             }
@@ -76,7 +76,7 @@ var vm = new Vue({
             vm.getInfo(id)
         },
         saveOrUpdate: function (event) {
-            var url = vm.goodsSpecification.id == null ? "../goodsspecification/save" : "../goodsspecification/update";
+            let url = vm.goodsSpecification.id == null ? "../goodsspecification/save" : "../goodsspecification/update";
 
             Ajax.request({
                 type: "POST",
@@ -147,7 +147,7 @@ var vm = new Vue({
             vm.goodsSpecification.picUrl = file.response.url;
         },
         eyeImage: function () {
-            var url = vm.goodsSpecification.picUrl;
+            let url = vm.goodsSpecification.picUrl;
             eyeImage(url);
         },
         handleSubmit: function (name) {
