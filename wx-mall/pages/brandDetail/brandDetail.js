@@ -1,8 +1,8 @@
-var util = require('../../utils/util.js');
-var api = require('../../config/api.js');
+let util = require('../../utils/util.js');
+let api = require('../../config/api.js');
 
 
-var app = getApp();
+const app = getApp();
 
 Page({
   data: {
@@ -60,4 +60,4 @@ Page({
     // 页面关闭
 
   }
-})
+});

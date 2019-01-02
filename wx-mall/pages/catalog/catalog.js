@@ -1,5 +1,7 @@
-var util = require('../../utils/util.js');
-var api = require('../../config/api.js');
+let util = require('../../utils/util.js');
+let api = require('../../config/api.js');
+
+const app = getApp();
 
 Page({
   data: {
@@ -67,10 +69,10 @@ Page({
   switchCate: function (event) {
     var that = this;
     var currentTarget = event.currentTarget;
-    if (this.data.currentCategory.id == event.currentTarget.dataset.id) {
+    if (this.data.currentCategory.id === event.currentTarget.dataset.id) {
       return false;
     }
 
     this.getCurrentCategory(event.currentTarget.dataset.id);
   }
-})
+});

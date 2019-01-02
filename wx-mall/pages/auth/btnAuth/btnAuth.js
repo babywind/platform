@@ -2,11 +2,14 @@ const util = require('../../../utils/util.js');
 const api = require('../../../config/api.js');
 
 //获取应用实例
-const app = getApp()
+const app = getApp();
+
+console.log(app);
 Page({
     data: {
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        navUrl: ''
+        navUrl: '',
+        userId: ''
     },
 
     onLoad: function (options) {
@@ -55,7 +58,7 @@ Page({
             }
         });
 
-        if (that.data.navUrl && that.data.navUrl == '/pages/index/index') {
+        if (that.data.navUrl && that.data.navUrl === '/pages/index/index') {
             wx.switchTab({
                 url: that.data.navUrl,
             })
@@ -77,4 +80,4 @@ Page({
     onUnload: function () {
         // 页面关闭
     }
-})
+});
