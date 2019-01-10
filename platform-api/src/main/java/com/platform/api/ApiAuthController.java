@@ -83,7 +83,7 @@ public class ApiAuthController extends ApiBaseAction {
             return toResponsFail("登录失败");
         }
 
-        Map<String, Object> resultObj = new HashMap<String, Object>();
+        Map<String, Object> resultObj = new HashMap<>();
         //
         UserInfo userInfo = fullUserInfo.getUserInfo();
 

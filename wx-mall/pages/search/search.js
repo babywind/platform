@@ -1,6 +1,7 @@
-var util = require('../../utils/util.js');
-var api = require('../../config/api.js');
-var app = getApp();
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
+
+const app = getApp();
 
 Page({
   data: {
@@ -10,8 +11,8 @@ Page({
     helpKeyword: [],
     historyKeyword: [],
     categoryFilter: false,
-    currentSortType: 'default',
-    currentSortOrder: '',
+    // currentSortType: 'default',
+    // currentSortOrder: '',
     filterCategory: [],
     defaultKeyword: {},
     hotKeyword: [],
@@ -50,11 +51,11 @@ Page({
   },
 
   inputChange: function (e) {
-
     this.setData({
       keyword: e.detail.value,
       searchStatus: false
     });
+
     this.getHelpKeyword();
   },
   getHelpKeyword: function () {
@@ -130,7 +131,7 @@ Page({
         break;
       case 'priceSort':
         let tmpSortOrder = 'asc';
-        if (this.data.currentSortOrder == 'asc') {
+        if (this.data.currentSortOrder === 'asc') {
           tmpSortOrder = 'desc';
         }
         this.setData({
@@ -156,7 +157,7 @@ Page({
     let filterCategory = this.data.filterCategory;
     let currentCategory = null;
     for (let key in filterCategory) {
-      if (key == currentIndex) {
+      if (key === currentIndex) {
         filterCategory[key].selected = true;
         currentCategory = filterCategory[key];
       } else {
@@ -175,4 +176,4 @@ Page({
   onKeywordConfirm(event) {
     this.getSearchResult(event.detail.value);
   }
-})
+});

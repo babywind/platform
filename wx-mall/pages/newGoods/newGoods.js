@@ -1,6 +1,6 @@
-var util = require('../../utils/util.js');
-var api = require('../../config/api.js');
-var app = getApp();
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
+const app = getApp();
 
 Page({
   data: {
@@ -29,17 +29,25 @@ Page({
     });
   },
   getGoodsList() {
-    var that = this;
+    let that = this;
 
-    util.request(api.GoodsList, { isNew: 1, page: that.data.page, size: that.data.size, order: that.data.currentSortOrder, sort: that.data.currentSortType, categoryId: that.data.categoryId })
-      .then(function (res) {
-        if (res.errno === 0) {
-          that.setData({
-            goodsList: res.data.goodsList,
-            filterCategory: res.data.filterCategory
-          });
-        }
-      });
+    let param = {
+      isNew: 1,
+      page: this.data.page,
+      size: this.data.size,
+      order: this.data.currentSortOrder,
+      sort: this.data.currentSortType,
+      categoryId: this.data.categoryId
+    };
+
+    util.request(api.GoodsList, param).then(function (res) {
+      if (res.errno === 0) {
+        that.setData({
+          goodsList: res.data.goodsList,
+          filterCategory: res.data.filterCategory
+        });
+      }
+    });
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数

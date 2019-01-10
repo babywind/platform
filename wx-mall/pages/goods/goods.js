@@ -1,7 +1,7 @@
-var app = getApp();
-var WxParse = require('../../lib/wxParse/wxParse.js');
-var util = require('../../utils/util.js');
-var api = require('../../config/api.js');
+const app = getApp();
+const WxParse = require('../../lib/wxParse/wxParse.js');
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
 
 Page({
   data: {
@@ -341,7 +341,7 @@ Page({
    * 添加到购物车
    */
   addToCart: function () {
-    var that = this;
+    let that = this;
     if (this.data.openAttr == false) {
       //打开规格选择窗口
       this.setData({

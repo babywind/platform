@@ -29,7 +29,7 @@ public final class OSSFactory {
         } else if (config.getType() == Constant.CloudService.QCLOUD.getValue()) {
             return new QcloudCloudStorageService(config);
         } else if (config.getType() == Constant.CloudService.LOCAL.getValue()) {
-
+            return new LocalStorageService(config);
         }
 
         return null;

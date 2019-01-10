@@ -63,7 +63,12 @@ Page({
       currentTab: this.data.currentTab
     });
 
-    this.getOrderList()
+    this.getOrderList();
+
+    wx.pageScrollTo({
+      scrollTop: 0,
+      duration: 300
+    });
   },
   getOrderList(){
     // let that = this;

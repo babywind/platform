@@ -4,7 +4,6 @@ const api = require('../../../config/api.js');
 //获取应用实例
 const app = getApp();
 
-console.log(app);
 Page({
     data: {
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -44,7 +43,6 @@ Page({
                             wx.setStorageSync('userInfo', res.data.userInfo);
                             wx.setStorageSync('token', res.data.token);
                             wx.setStorageSync('userId', res.data.userId);
-
                         } else {
                             // util.showErrorToast(res.errmsg)
                             wx.showModal({
