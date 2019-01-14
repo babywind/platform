@@ -87,7 +87,7 @@ Page({
       title: '',
       confirmColor: '#b4282d',
       content: '退出登录？',
-      success: function (res) {
+      success: (res) => {
         if (res.confirm) {
           wx.removeStorageSync('token');
           wx.removeStorageSync('userInfo');
@@ -99,8 +99,9 @@ Page({
           };
           app.globalData.token = '';
 
-          wx.switchTab({
-            url: '/pages/index/index'
+          this.setData({
+            userInfo: app.globalData.userInfo,
+            hasMobile: '',
           });
         }
       }

@@ -2,25 +2,28 @@ package com.platform.xss;
 
 import org.apache.commons.lang.StringUtils;
 
-import javax.servlet.*;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
  * XSS过滤
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author lipengjun 939961241@qq.com
  * @date 2017-04-01 10:20
  */
 public class XssFilter implements Filter {
     //需要排除过滤的url
-    private String excludedPages;
     private String[] excludedPageArray;
 
     @Override
-    public void init(FilterConfig config) throws ServletException {
-        excludedPages = config.getInitParameter("excludedPages");
+    public void init(FilterConfig config) {
+        String excludedPages = config.getInitParameter("excludedPages");
         if (StringUtils.isNotEmpty(excludedPages)) {
             excludedPageArray = excludedPages.split(",");
         }

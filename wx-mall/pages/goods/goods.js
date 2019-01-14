@@ -27,7 +27,9 @@ Page({
   },
   getGoodsInfo: function () {
     let that = this;
-    util.request(api.GoodsDetail, { id: that.data.id }).then(function (res) {
+    util.request(api.GoodsDetail, {
+      id: that.data.id
+    }).then(function (res) {
       if (res.errno === 0) {
         that.setData({
           goods: res.data.info,
@@ -40,8 +42,8 @@ Page({
           productList: res.data.productList,
           userHasCollect: res.data.userHasCollect
         });
-          //设置默认值
-          that.setDefSpecInfo(that.data.specificationList);
+        //设置默认值
+        that.setDefSpecInfo(that.data.specificationList);
         if (res.data.userHasCollect == 1) {
           that.setData({
             'collectBackImage': that.data.hasCollectImage
@@ -61,7 +63,9 @@ Page({
   },
   getGoodsRelated: function () {
     let that = this;
-    util.request(api.GoodsRelated, { id: that.data.id }).then(function (res) {
+    util.request(api.GoodsRelated, {
+      id: that.data.id
+    }).then(function (res) {
       if (res.errno === 0) {
         that.setData({
           relatedGoods: res.data.goodsList,
@@ -250,11 +254,14 @@ Page({
       }
     } else {
       //添加或是取消收藏
-      util.request(api.CollectAddOrDelete, { typeId: 0, valueId: this.data.id }, "POST", "application/json")
+      util.request(api.CollectAddOrDelete, {
+        typeId: 0,
+        valueId: this.data.id
+      }, "POST", "application/json")
         .then(function (res) {
           let _res = res;
           if (_res.errno == 0) {
-            if ( _res.data.type == 'add') {
+            if (_res.data.type == 'add') {
               that.setData({
                 'collectBackImage': that.data.hasCollectImage
               });
@@ -297,6 +304,9 @@ Page({
 
       //提示选择完整规格
       if (!this.isCheckedAllSpec()) {
+        wx.showToast({
+          title: '请选择完整规格'
+        });
         return false;
       }
 
@@ -314,7 +324,11 @@ Page({
       }
 
       // 直接购买商品
-      util.request(api.BuyAdd, { goodsId: this.data.goods.id, number: this.data.number, productId: checkedProduct[0].id }, "POST",'application/json')
+      util.request(api.BuyAdd, {
+        goodsId: this.data.goods.id,
+        number: this.data.number,
+        productId: checkedProduct[0].id
+      }, "POST", 'application/json')
         .then(function (res) {
           let _res = res;
           if (_res.errno == 0) {
@@ -352,9 +366,9 @@ Page({
 
       //提示选择完整规格
       if (!this.isCheckedAllSpec()) {
-          wx.showToast({
-              title: '请选择完整规格'
-          });
+        wx.showToast({
+          title: '请选择完整规格'
+        });
         return false;
       }
 
@@ -372,7 +386,11 @@ Page({
       }
 
       //添加到购物车
-      util.request(api.CartAdd, { goodsId: this.data.goods.id, number: this.data.number, productId: checkedProduct[0].id }, 'POST', 'application/json')
+      util.request(api.CartAdd, {
+        goodsId: this.data.goods.id,
+        number: this.data.number,
+        productId: checkedProduct[0].id
+      }, 'POST', 'application/json')
         .then(function (res) {
           let _res = res;
           if (_res.errno == 0) {
@@ -414,22 +432,29 @@ Page({
       number: this.data.number + 1
     });
   },
-    setDefSpecInfo: function (specificationList) {
-        //未考虑规格联动情况
-        let that = this;
-        if (!specificationList)return;
-        for (let i = 0; i < specificationList.length;i++){
-            let specification = specificationList[i];
-            let specNameId = specification.specification_id;
-            //规格只有一个时自动选择规格
-            if (specification.valueList && specification.valueList.length == 1){
-                let specValueId = specification.valueList[0].id;
-                that.clickSkuValue({ currentTarget: { dataset: { "nameId": specNameId, "valueId": specValueId } } });
+  setDefSpecInfo: function (specificationList) {
+    //未考虑规格联动情况
+    let that = this;
+    if (!specificationList) return;
+    for (let i = 0; i < specificationList.length; i++) {
+      let specification = specificationList[i];
+      let specNameId = specification.specification_id;
+      //规格只有一个时自动选择规格
+      if (specification.valueList && specification.valueList.length == 1) {
+        let specValueId = specification.valueList[0].id;
+        that.clickSkuValue({
+          currentTarget: {
+            dataset: {
+              "nameId": specNameId,
+              "valueId": specValueId
             }
-        }
-        specificationList.map(function(item){
-
+          }
         });
-
+      }
     }
+    specificationList.map(function (item) {
+
+    });
+
+  }
 })

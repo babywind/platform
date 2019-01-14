@@ -1,6 +1,7 @@
 package com.platform.config;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +16,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableWebMvc
 @EnableSwagger2
-@ComponentScan(basePackages="com.platform.api")
+@ComponentScan(basePackages="com.platform")
+@MapperScan(basePackages = "com.platform.dao")
 public class SwaggerConfig {
 
     @Bean
