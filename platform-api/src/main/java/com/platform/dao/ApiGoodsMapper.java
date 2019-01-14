@@ -1,6 +1,8 @@
 package com.platform.dao;
 
 import com.platform.entity.GoodsVo;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
@@ -10,6 +12,7 @@ import java.util.Map;
  * @email 939961241@qq.com
  * @date 2017-08-11 09:16:45
  */
+@Repository
 public interface ApiGoodsMapper extends BaseDao<GoodsVo> {
 
     List<GoodsVo> queryHotGoodsList(Map<String, Object> params);

@@ -2443,18 +2443,18 @@ INSERT INTO `nideshop_goods_gallery` VALUES ('680', '1181000', 0x687474703A2F2F7
 DROP TABLE IF EXISTS `nideshop_goods_issue`;
 CREATE TABLE `nideshop_goods_issue` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `question` varchar(500) DEFAULT NULL,
-  `answer` varchar(100) DEFAULT NULL,
+  `question` varchar(1024) DEFAULT NULL,
+  `answer` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of nideshop_goods_issue
 -- ----------------------------
-INSERT INTO `nideshop_goods_issue` VALUES ('1', '购买运费如何收取？', '单笔订单金额（不含运费）满88元免邮费；不满88元，每单收取10元运费。\n(港澳台地区需满');
-INSERT INTO `nideshop_goods_issue` VALUES ('2', '使用什么快递发货？', '严选默认使用顺丰快递发货（个别商品使用其他快递），配送范围覆盖全国大部分地区（港澳台地区除');
-INSERT INTO `nideshop_goods_issue` VALUES ('3', '如何申请退货？', '1.自收到商品之日起30日内，顾客可申请无忧退货，退款将原路返还，不同的银行处理时间不同，');
-INSERT INTO `nideshop_goods_issue` VALUES ('4', '如何开具发票？', '1.如需开具普通发票，请在下单时选择“我要开发票”并填写相关信息（APP仅限2.4.0及以');
+INSERT INTO `nideshop_goods_issue` VALUES ('1', '购买运费如何收取？', '单笔订单金额（不含运费）满88元免邮费；不满88元，每单收取10元运费。');
+INSERT INTO `nideshop_goods_issue` VALUES ('2', '使用什么快递发货？', '严选默认使用顺丰快递发货（个别商品使用其他快递），配送范围覆盖全国大部分地区（港澳台地区除外）');
+INSERT INTO `nideshop_goods_issue` VALUES ('3', '如何申请退货？', '1.自收到商品之日起30日内，顾客可申请无忧退货，退款将原路返还，不同的银行处理时间不同。');
+# INSERT INTO `nideshop_goods_issue` VALUES ('4', '如何开具发票？', '1.如需开具普通发票，请在下单时选择“我要开发票”并填写相关信息（APP仅限2.4.0及以');
 
 -- ----------------------------
 -- Table structure for `nideshop_goods_specification`
@@ -3333,7 +3333,7 @@ CREATE TABLE `QRTZ_SCHEDULER_STATE` (
 -- ----------------------------
 -- Records of QRTZ_SCHEDULER_STATE
 -- ----------------------------
-INSERT INTO `QRTZ_SCHEDULER_STATE` VALUES ('PlatformScheduler', 'Win_PC1508754695596', '1508756226419', '15000');
+# INSERT INTO `QRTZ_SCHEDULER_STATE` VALUES ('PlatformScheduler', 'Win_PC1508754695596', '1508756226419', '15000');
 
 -- ----------------------------
 -- Table structure for `QRTZ_SIMPLE_TRIGGERS`
@@ -3485,7 +3485,7 @@ CREATE TABLE `sys_config` (
 -- ----------------------------
 -- Records of sys_config
 -- ----------------------------
--- INSERT INTO `sys_config` VALUES ('3', 'CLOUD_STORAGE_CONFIG_KEY', '{"aliyunAccessKeyId":"1","aliyunAccessKeySecret":"1","aliyunBucketName":"1","aliyunDomain":"http://image.111.com","aliyunEndPoint":"1","aliyunPrefix":"1","qcloudBucketName":"","qcloudDomain":"","qcloudPrefix":"","qcloudSecretId":"","qcloudSecretKey":"","qiniuAccessKey":"IXYAaaAwc-ZSuInpEoEJq_CivmcAjWLq1HmpK9dr","qiniuBucketName":"wxmall","qiniuDomain":"http://p9kyr79ne.bkt.clouddn.com","qiniuPrefix":"upload","qiniuSecretKey":"dVlk3dhOAGubYdiCyybE13o5KpjyqGhqh428ufxP","type":1}', '0', '云存储配置信息');
+INSERT INTO `sys_config` VALUES ('3', 'CLOUD_STORAGE_CONFIG_KEY', '{"aliyunAccessKeyId":"1","aliyunAccessKeySecret":"1","aliyunBucketName":"1","aliyunDomain":"http://image.111.com","aliyunEndPoint":"1","aliyunPrefix":"1","qcloudBucketName":"","qcloudDomain":"","qcloudPrefix":"","qcloudSecretId":"","qcloudSecretKey":"","qiniuAccessKey":"IXYAaaAwc-ZSuInpEoEJq_CivmcAjWLq1HmpK9dr","qiniuBucketName":"wxmall","qiniuDomain":"http://p9kyr79ne.bkt.clouddn.com","qiniuPrefix":"upload","qiniuSecretKey":"dVlk3dhOAGubYdiCyybE13o5KpjyqGhqh428ufxP","type":1}', '0', '云存储配置信息');
 
 -- ----------------------------
 -- Table structure for `sys_dept`
@@ -3503,7 +3503,7 @@ CREATE TABLE `sys_dept` (
 -- ----------------------------
 -- Records of sys_dept
 -- ----------------------------
-INSERT INTO `sys_dept` VALUES ('1', '0', '北京总部', '0', '0');
+INSERT INTO `sys_dept` VALUES ('1', '0', '总部', '0', '0');
 INSERT INTO `sys_dept` VALUES ('2', '1', '武汉分公司', '1', '0');
 INSERT INTO `sys_dept` VALUES ('3', '1', '上海分公司', '2', '0');
 INSERT INTO `sys_dept` VALUES ('4', '3', '技术部', '0', '0');

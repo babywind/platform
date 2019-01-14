@@ -3,6 +3,7 @@ package com.platform.dao;
 import com.platform.entity.SmsLogVo;
 import com.platform.entity.UserVo;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 /**
  * 用户
@@ -11,9 +12,10 @@ import org.apache.ibatis.annotations.Param;
  * @email 939961241@qq.com
  * @date 2017-03-23 15:22:06
  */
+@Repository
 public interface ApiUserMapper extends BaseDao<UserVo> {
 
-    UserVo queryByMobile(String mobile);
+    UserVo queryByMobile(@Param("mobile") String mobile);
 
     UserVo queryByOpenId(@Param("openId") String openId);
 
