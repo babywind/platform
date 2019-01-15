@@ -96,12 +96,12 @@ public class CategoryController {
 
         List<CategoryEntity> list = categoryService.queryList(params);
         //添加顶级菜单
-        CategoryEntity root = new CategoryEntity();
-        root.setId(0);
-        root.setName("一级分类");
-        root.setParentId(-1);
-        root.setOpen(true);
-        list.add(0,root);
+//        CategoryEntity root = new CategoryEntity();
+//        root.setId(0);
+//        root.setName("一级分类");
+//        root.setParentId(-1);
+//        root.setOpen(true);
+//        list.add(0,root);
         return R.ok().put("list", list);
     }
 
@@ -110,7 +110,7 @@ public class CategoryController {
      */
     @RequestMapping("/getAreaTree")
     public R getAreaTree() {
-        List<CategoryEntity> list = categoryService.queryList(new HashMap<String, Object>());
+        List<CategoryEntity> list = categoryService.queryList(new HashMap<>());
         for (CategoryEntity sysRegionEntity : list) {
             sysRegionEntity.setValue(sysRegionEntity.getId() + "");
             sysRegionEntity.setLabel(sysRegionEntity.getName());

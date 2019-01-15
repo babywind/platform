@@ -397,9 +397,7 @@ public class ApiCartController extends ApiBaseAction {
     @PostMapping("checkout")
     public Object checkout(@LoginUser UserVo loginUser, Integer couponId, @RequestParam(defaultValue = "cart") String type) {
         Map<String, Object> resultObj = new HashMap<>();
-        //根据收货地址计算运费
 
-        BigDecimal freightPrice = new BigDecimal(0.00);
         //默认收货地址
         Map<String, Object> param = new HashMap<>();
         param.put("user_id", loginUser.getUserId());
@@ -437,7 +435,6 @@ public class ApiCartController extends ApiBaseAction {
             checkedGoodsList.add(cartVo);
         }
 
-
         //获取可用的优惠券信息
         BigDecimal couponPrice = new BigDecimal(0.00);
         if (couponId != null && couponId != 0) {
@@ -447,14 +444,19 @@ public class ApiCartController extends ApiBaseAction {
             }
         }
 
+        //根据收货地址计算运费
+        Map<String, Object> para = new HashMap<>();
+        para.put("goodsTotalPrice", goodsTotalPrice);
+
+        BigDecimal freightPrice = this.apiCouponService.freightPriceCalc(para);
+
         //订单的总价
         BigDecimal orderTotalPrice = goodsTotalPrice.add(freightPrice);
 
-        //
-        BigDecimal actualPrice = orderTotalPrice.subtract(couponPrice);  //减去其它支付的金额后，要实际支付的金额
+        // 减去其它支付的金额后，要实际支付的金额
+        BigDecimal actualPrice = orderTotalPrice.subtract(couponPrice);
 
         resultObj.put("freightPrice", freightPrice);
-
         resultObj.put("couponPrice", couponPrice);
         resultObj.put("checkedGoodsList", checkedGoodsList);
         resultObj.put("goodsTotalPrice", goodsTotalPrice);

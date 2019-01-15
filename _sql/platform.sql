@@ -3663,7 +3663,7 @@ INSERT INTO `sys_menu` VALUES ('330', '244', '发放', null, 'coupon:publish', '
 # INSERT INTO `sys_menu` VALUES ('256', '254', '新增', null, 'brand:save', '2', null, '6', '0');
 # INSERT INTO `sys_menu` VALUES ('257', '254', '修改', null, 'brand:update', '2', null, '6', '0');
 # INSERT INTO `sys_menu` VALUES ('258', '254', '删除', null, 'brand:delete', '2', null, '6', '0');
-INSERT INTO `sys_menu` VALUES ('259', '222', '商品规格', 'shop/specification.html', null, '1', 'fa fa-hand-rock-o', '1', '0');
+INSERT INTO `sys_menu` VALUES ('259', '222', '商品规格管理', 'shop/specification.html', null, '1', 'fa fa-hand-rock-o', '1', '0');
 INSERT INTO `sys_menu` VALUES ('260', '259', '查看', null, 'specification:list,specification:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('261', '259', '新增', null, 'specification:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('262', '259', '修改', null, 'specification:update', '2', null, '6', '0');
@@ -3700,7 +3700,7 @@ INSERT INTO `sys_menu` VALUES ('294', '374', '订单列表', 'shop/order.html', 
 INSERT INTO `sys_menu` VALUES ('295', '294', '查看', null, 'order:list,order:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('296', '294', '发货', null, 'order:sendGoods', '2', null, '6', '0');
 
-INSERT INTO `sys_menu` VALUES ('297', '222', '商品类型', 'shop/category.html', null, '1', 'fa fa-ship', '3', '0');
+INSERT INTO `sys_menu` VALUES ('297', '222', '商品分类管理', 'shop/category.html', null, '1', 'fa fa-ship', '3', '0');
 INSERT INTO `sys_menu` VALUES ('298', '297', '查看', null, 'category:list,category:info', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('299', '297', '新增', null, 'category:save', '2', null, '6', '0');
 INSERT INTO `sys_menu` VALUES ('300', '297', '修改', null, 'category:update', '2', null, '6', '0');

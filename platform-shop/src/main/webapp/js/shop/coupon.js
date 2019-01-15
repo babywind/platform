@@ -56,14 +56,15 @@ $(function () {
                 }
             },
             {label: '最小商品金额', name: 'minGoodsAmount', index: 'min_goods_amount', width: 80},
-            {
-                label: '操作', width: 70, sortable: false, formatter: function (value, col, row) {
-                    if (row.sendType == 1 || row.sendType == 3) {
-                        return '<button class="ivu-btn ivu-btn-primary ivu-btn-circle ivu-btn-small" onclick="vm.publish(' + row.id + ',' + row.sendType + ')"><i class="ivu-icon ivu-icon-android-send"></i>发放</button>';
-                    }
-                    return '';
-                }
-            }]
+            // {
+            //     label: '操作', width: 70, sortable: false, formatter: function (value, col, row) {
+            //         if (row.sendType == 1 || row.sendType == 3) {
+            //             return '<button class="ivu-btn ivu-btn-primary ivu-btn-circle ivu-btn-small" onclick="vm.publish(' + row.id + ',' + row.sendType + ')"><i class="ivu-icon ivu-icon-android-send"></i>发放</button>';
+            //         }
+            //         return '';
+            //     }
+            // }
+            ]
     });
 });
 

@@ -37,6 +37,9 @@
                 #{item}
             </foreach>
         </if>
+        <if test="send_type != null">
+            and send_type = #{send_type}
+        </if>
         <if test="enabled != null and enabled == true">
             and a.use_end_date >= now()
             and now() >= a.use_start_date
